@@ -273,6 +273,17 @@ const elRows = document.querySelector("#info-rows");
 const diatonicBox = document.querySelector("#diatonic-box");
 const diatonicChips = document.querySelector("#diatonic-chips");
 const sdResult = document.querySelector("#sd-result");
+const LT = window.LearningTools;
+const readabilityBox = document.querySelector("#readability-box");
+const transposeFrom = document.querySelector("#transpose-from");
+const transposeTo = document.querySelector("#transpose-to");
+const transposeProgression = document.querySelector("#transpose-progression");
+const transposeResult = document.querySelector("#transpose-result");
+const transposeCurrent = document.querySelector("#transpose-current");
+const builderButtons = document.querySelector("#builder-buttons");
+const builderClear = document.querySelector("#builder-clear");
+const builderResult = document.querySelector("#builder-result");
+let builderDegrees = ["I", "vi", "IV", "V"];
 
 function row(k, v, sub){ return `<div class="k">${k}</div><div class="v">${v}${sub?` <small>${sub}</small>`:""}</div>`; }
 function updatePanel(i){
@@ -303,6 +314,7 @@ function updatePanel(i){
     diatonicBox.hidden = true;
     currentTarget = null;
   }
+  updateLearningTools(i);
 }
 
 /* ===================== M8: 세컨더리 도미넌트 ===================== */
@@ -349,6 +361,106 @@ function buildPointer(){
   const a = polar(99,0), b = polar(99,30);
   pointerG.appendChild(S("line", { x1:a.x, y1:a.y, x2:b.x, y2:b.y, stroke:"#d6336c", "stroke-width":"0.7", "stroke-dasharray":"2 1" }));
   pointerG.style.display = "none";
+}
+
+/* ===================== 학습 도구: 조표/조옮김/코드진행 ===================== */
+function keyLabel(k){ return `${k.major} ${k.majorKo}`; }
+function degreePills(degrees){ return `<div class="degree-line">${degrees.map(d => `<span class="degree-pill">${d}</span>`).join("")}</div>`; }
+function chordPills(chords){ return `<div class="chord-line">${chords.map(c => `<span class="chord-pill">${c}</span>`).join("")}</div>`; }
+
+function updateLearningTools(i){
+  updateReadability(i);
+  updateBuilderResult();
+}
+
+function updateReadability(i){
+  const k = KEYS[i];
+  const policy = LT.getKeySignaturePolicy(k);
+  const toneClass = policy.tier === "초급" ? "" : policy.tier === "중급" ? " mid" : " high";
+  readabilityBox.innerHTML = `
+    <span class="readability-badge${toneClass}">${policy.tier} · ${policy.badge}</span>
+    <div><strong>${k.major}</strong> 조표: ${k.accCount} · ${k.acc === "조표 없음" ? "붙는 음 없음" : k.acc}</div>
+    <div>권장 표기: <strong>${policy.preferredName}</strong></div>
+    <div>${policy.note}</div>
+    <div><strong>수업 원칙:</strong> 0-2개는 빠른 읽기, 3-4개는 음 이름 묶어 읽기, 5개 이상은 이명동음을 비교해 더 적은 표기를 먼저 씁니다.</div>
+  `;
+}
+
+function buildLearningTools(){
+  KEYS.forEach(k => {
+    transposeFrom.add(new Option(keyLabel(k), String(k.i)));
+    transposeTo.add(new Option(keyLabel(k), String(k.i)));
+  });
+  transposeFrom.value = "0";
+  transposeTo.value = "3";
+  [transposeFrom, transposeTo, transposeProgression].forEach(el => el.addEventListener("change", updateTransposeResult));
+  transposeCurrent.addEventListener("click", () => {
+    transposeFrom.value = String(currentIndex);
+    updateTransposeResult();
+  });
+
+  DEGREE_LABELS.forEach(degree => {
+    const b = document.createElement("button");
+    b.type = "button";
+    b.textContent = degree;
+    b.addEventListener("click", () => {
+      builderDegrees.push(degree);
+      if(soundOn()){
+        const chord = LT.buildProgression(KEYS[currentIndex].major, [degree], DIATONIC)[0];
+        playChordName(chord);
+      }
+      updateBuilderResult();
+    });
+    builderButtons.appendChild(b);
+  });
+  builderClear.addEventListener("click", () => {
+    builderDegrees = [];
+    updateBuilderResult();
+  });
+
+  updateTransposeResult();
+  updateBuilderResult();
+}
+
+function selectedTransposeDegrees(){
+  return transposeProgression.value.split(",").map(v => v.trim()).filter(Boolean);
+}
+
+function updateTransposeResult(){
+  const from = Number(transposeFrom.value);
+  const to = Number(transposeTo.value);
+  const degrees = selectedTransposeDegrees();
+  try {
+    const result = LT.transposeProgression(from, to, degrees, KEYS, DIATONIC);
+    transposeResult.innerHTML = `
+      <div><strong>${result.fromKey.major}</strong>에서 <strong>${result.toKey.major}</strong>로: ${result.direction} ${result.steps}칸</div>
+      <div>경로: ${result.path}</div>
+      ${degreePills(degrees)}
+      <div>원래 진행 ${chordPills(result.sourceChords)}</div>
+      <div>조옮김 결과 ${chordPills(result.targetChords)}</div>
+    `;
+  } catch (err) {
+    transposeResult.textContent = err.message;
+  }
+}
+
+function updateBuilderResult(){
+  if(!builderResult) return;
+  const key = KEYS[currentIndex].major;
+  if(builderDegrees.length === 0){
+    builderResult.innerHTML = "로마숫자를 눌러 현재 조의 코드 진행을 만드세요.";
+    return;
+  }
+  try {
+    const chords = LT.buildProgression(key, builderDegrees, DIATONIC);
+    builderResult.innerHTML = `
+      <div><strong>${key}</strong> 장조 코드진행</div>
+      ${degreePills(builderDegrees)}
+      ${chordPills(chords)}
+    `;
+  } catch (err) {
+    builderResult.textContent = err.message;
+  }
 }
 
 /* ===================== 조성 칩 ===================== */
@@ -460,14 +572,14 @@ document.querySelector("#sd-toggle").addEventListener("change", updatePointer);
 document.querySelector("#sound-toggle").addEventListener("change", () => audio());
 
 window.addEventListener("keydown", (ev) => {
-  if(ev.target.matches("input,button")) return;
+  if(ev.target.matches("input,button,select,textarea")) return;
   if(ev.key === "ArrowRight"){ ev.preventDefault(); stepTo(((currentIndex+1)%12)); }
   else if(ev.key === "ArrowLeft"){ ev.preventDefault(); stepTo(((currentIndex+11)%12)); }
   else if(ev.key === " "){ ev.preventDefault(); audio(); spinTo(null); }
 });
 
 /* ===================== 부팅 ===================== */
-buildBoard(); buildDisc(); buildOverlay(); buildIndicator(); buildPointer(); buildChips();
+buildBoard(); buildDisc(); buildOverlay(); buildIndicator(); buildPointer(); buildChips(); buildLearningTools();
 render();
 onStop(0);
 newDeck();

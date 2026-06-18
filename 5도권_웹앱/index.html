@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>5도권 회전판 · Circle of Fifths</title>
+<link rel="icon" href="data:,">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -53,6 +54,39 @@
         <div class="chip-row" id="diatonic-chips"></div>
         <div class="sd-result" id="sd-result" hidden></div>
       </div>
+      <section class="tools-panel" aria-label="학습 도구">
+        <details open>
+          <summary>조표 가독성 폴리시</summary>
+          <div class="readability" id="readability-box"></div>
+        </details>
+        <details>
+          <summary>조옮김 시뮬레이터</summary>
+          <div class="tool-grid">
+            <label>출발 조<select id="transpose-from"></select></label>
+            <label>도착 조<select id="transpose-to"></select></label>
+          </div>
+          <label class="tool-wide">진행
+            <select id="transpose-progression">
+              <option value="I,vi,IV,V">I-vi-IV-V</option>
+              <option value="I,IV,V,I">I-IV-V-I</option>
+              <option value="ii,V,I">ii-V-I</option>
+              <option value="I,vi,ii,V">I-vi-ii-V</option>
+            </select>
+          </label>
+          <div class="tool-actions">
+            <button class="btn btn-ghost" id="transpose-current">현재 조를 출발로</button>
+          </div>
+          <div class="tool-result" id="transpose-result"></div>
+        </details>
+        <details>
+          <summary>코드진행 빌더</summary>
+          <div class="builder-buttons" id="builder-buttons" aria-label="로마숫자 코드 선택"></div>
+          <div class="tool-actions">
+            <button class="btn btn-ghost" id="builder-clear">비우기</button>
+          </div>
+          <div class="tool-result" id="builder-result"></div>
+        </details>
+      </section>
     </aside>
   </main>
 
@@ -91,6 +125,7 @@
   <div aria-live="polite" class="sr-only" id="aria-live"></div>
 
   <script src="data.js"></script>
+  <script src="learning-tools.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
