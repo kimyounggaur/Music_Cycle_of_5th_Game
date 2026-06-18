@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="260mm" height="260mm" viewBox="0 0 260 260">
+<title>5도권 하판 260mm</title>
+<desc>회전 원판과 투명 표시판을 고정하는 하판 도안.</desc>
+<defs>
+  <style>
+    .cut { fill: none; stroke: #ff5d8f; stroke-width: 0.35; stroke-dasharray: 2 1.5; }
+    .score { fill: none; stroke: #9aa4b2; stroke-width: 0.25; stroke-dasharray: 1 1; }
+    .guide { fill: none; stroke: #293241; stroke-width: 0.35; }
+    .tiny { font-size: 2.8px; fill: #5b6375; font-family: "Malgun Gothic", "Noto Sans KR", Arial, sans-serif; }
+  </style>
+</defs>
+<rect x="0.2" y="0.2" width="259.6" height="259.6" rx="8" fill="#fffdf4" stroke="#ff5d8f" stroke-width="0.35" stroke-dasharray="2 1.5"/>
+<rect x="7" y="7" width="246" height="246" rx="9" fill="none" stroke="#ffd6e7" stroke-width="0.8"/>
+<path d="M 121.559 7.895 L 122.091 8.763 L 122.959 9.295 L 122.091 9.827 L 121.559 10.695 L 121.027 9.827 L 120.159 9.295 L 121.027 8.763 Z" fill="#ff8fab" fill-opacity="0.75"/>
+<text x="164.93" y="11.855" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" font-size="3.2" font-weight="800" fill="#65c3ad" fill-opacity="0.75" transform="rotate(5.49 164.93 11.855)">♪</text>
+<path d="M 205.365 27.674 L 206.163 28.976 L 207.465 29.774 L 206.163 30.572 L 205.365 31.874 L 204.567 30.572 L 203.265 29.774 L 204.567 28.976 Z" fill="#8ecae6" fill-opacity="0.75"/>
+<text x="231.95" y="64.83" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" font-size="3.2" font-weight="800" fill="#f5a742" fill-opacity="0.75" transform="rotate(19.137 231.95 64.83)">♬</text>
+<path d="M 250.455 102.388 L 251.12 103.473 L 252.205 104.138 L 251.12 104.803 L 250.455 105.888 L 249.79 104.803 L 248.705 104.138 L 249.79 103.473 Z" fill="#9b7ede" fill-opacity="0.75"/>
+<text x="254.07" y="148.217" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" font-size="3.2" font-weight="800" fill="#ff8fab" fill-opacity="0.75" transform="rotate(32.784 254.07 148.217)">♪</text>
+<path d="M 236.009 186.936 L 236.541 187.804 L 237.409 188.336 L 236.541 188.868 L 236.009 189.736 L 235.477 188.868 L 234.609 188.336 L 235.477 187.804 Z" fill="#65c3ad" fill-opacity="0.75"/>
+<text x="210.348" y="223.394" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" font-size="3.2" font-weight="800" fill="#8ecae6" fill-opacity="0.75" transform="rotate(46.431 210.348 223.394)">♬</text>
+<path d="M 173.373 245.56 L 174.171 246.862 L 175.473 247.66 L 174.171 248.458 L 173.373 249.76 L 172.575 248.458 L 171.273 247.66 L 172.575 246.862 Z" fill="#f5a742" fill-opacity="0.75"/>
+<text x="129.503" y="250.999" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" font-size="3.2" font-weight="800" fill="#9b7ede" fill-opacity="0.75" transform="rotate(60.078 129.503 250.999)">♪</text>
+<path d="M 86.44 243.492 L 87.105 244.577 L 88.19 245.242 L 87.105 245.907 L 86.44 246.992 L 85.775 245.907 L 84.69 245.242 L 85.775 244.577 Z" fill="#ff8fab" fill-opacity="0.75"/>
+<text x="47.439" y="224.387" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" font-size="3.2" font-weight="800" fill="#65c3ad" fill-opacity="0.75" transform="rotate(73.725 47.439 224.387)">♬</text>
+<path d="M 23.515 186.063 L 24.047 186.931 L 24.915 187.463 L 24.047 187.995 L 23.515 188.863 L 22.983 187.995 L 22.115 187.463 L 22.983 186.931 Z" fill="#8ecae6" fill-opacity="0.75"/>
+<text x="7.964" y="146.896" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" font-size="3.2" font-weight="800" fill="#f5a742" fill-opacity="0.75" transform="rotate(87.373 7.964 146.896)">♪</text>
+<path d="M 7.614 100.57 L 8.412 101.872 L 9.714 102.67 L 8.412 103.468 L 7.614 104.77 L 6.816 103.468 L 5.514 102.67 L 6.816 101.872 Z" fill="#9b7ede" fill-opacity="0.75"/>
+<text x="28.589" y="63.995" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" font-size="3.2" font-weight="800" fill="#ff8fab" fill-opacity="0.75" transform="rotate(101.02 28.589 63.995)">♬</text>
+<path d="M 56.769 29.177 L 57.434 30.262 L 58.519 30.927 L 57.434 31.592 L 56.769 32.677 L 56.104 31.592 L 55.019 30.927 L 56.104 30.262 Z" fill="#65c3ad" fill-opacity="0.75"/>
+<text x="95.435" y="9.458" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" font-size="3.2" font-weight="800" fill="#8ecae6" fill-opacity="0.75" transform="rotate(114.667 95.435 9.458)">♪</text>
+<circle cx="130" cy="130" r="115" fill="#ffffff" stroke="#ffd6e7" stroke-width="1"/>
+<circle cx="130" cy="130" r="119" fill="none" stroke="#9aa4b2" stroke-width="0.25" stroke-dasharray="1 1"/>
+<circle cx="130" cy="130" r="2.5" fill="#ffffff" stroke="#ff5d8f" stroke-width="0.4"/>
+<text text-anchor="middle" dominant-baseline="middle" fill="#293241" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="130" y="18" font-size="9.5" font-weight="850">5도권 회전판</tspan></text>
+<text text-anchor="middle" dominant-baseline="middle" fill="#5b6375" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="130" y="29" font-size="4" font-weight="600">Circle of Fifths Learning Wheel</tspan></text>
+<text x="73" y="20" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" font-size="6.5" font-weight="800" fill="#65c3ad" fill-opacity="0.9" transform="rotate(-12 73 20)">♪</text>
+<text x="188" y="20" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" font-size="6.2" font-weight="800" fill="#ff8fab" fill-opacity="0.9" transform="rotate(10 188 20)">♬</text>
+<path d="M 57 26.8 L 57.836 28.164 L 59.2 29 L 57.836 29.836 L 57 31.2 L 56.164 29.836 L 54.8 29 L 56.164 28.164 Z" fill="#f5a742" fill-opacity="0.9"/>
+<path d="M 204 27.8 L 204.836 29.164 L 206.2 30 L 204.836 30.836 L 204 32.2 L 203.164 30.836 L 201.8 30 L 203.164 29.164 Z" fill="#8ecae6" fill-opacity="0.9"/>
+<line x1="130" y1="35" x2="130" y2="8" stroke="#ff5d8f" stroke-width="0.62" />
+<g>
+    <rect x="85" y="35.75" width="90" height="7.5" rx="3.75" fill="#fff0f6" fill-opacity="1" stroke="#ff8fab" stroke-width="0.35"/>
+    <text text-anchor="middle" dominant-baseline="middle" fill="#d6336c" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="130" y="39.65" font-size="3.1" font-weight="800">기준선에 알고 싶은 조를 맞추세요</tspan></text>
+  </g>
+<path d="M 192 72 A 88 88 0 0 1 219 139" fill="none" stroke="#d6336c" stroke-width="1.2" marker-end="url(#arrow)"/>
+<path d="M 68 72 A 88 88 0 0 0 41 139" fill="none" stroke="#2f80ed" stroke-width="1.2" marker-end="url(#arrowBlue)"/>
+<defs>
+    <marker id="arrow" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5 Z" fill="#d6336c"/></marker>
+    <marker id="arrowBlue" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5 Z" fill="#2f80ed"/></marker>
+  </defs>
+<g>
+    <rect x="198.5" y="64.35" width="25" height="7.3" rx="3.65" fill="#fff0f6" fill-opacity="1" stroke="#ff8fab" stroke-width="0.35"/>
+    <text text-anchor="middle" dominant-baseline="middle" fill="#d6336c" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="211" y="68.15" font-size="3.2" font-weight="800">♯ 증가</tspan></text>
+  </g>
+<g>
+    <rect x="36.5" y="64.35" width="25" height="7.3" rx="3.65" fill="#eff8ff" fill-opacity="1" stroke="#8ecae6" stroke-width="0.35"/>
+    <text text-anchor="middle" dominant-baseline="middle" fill="#2f80ed" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="49" y="68.15" font-size="3.2" font-weight="800">♭ 증가</tspan></text>
+  </g>
+<circle cx="17" cy="17" r="5" fill="#ffffff" fill-opacity="0.45" stroke="#9aa4b2" stroke-width="0.25" stroke-dasharray="1 1"/>
+<text text-anchor="middle" dominant-baseline="middle" fill="#5b6375" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="17" y="25.8" font-size="2.2" font-weight="500">고무발</tspan></text>
+<circle cx="243" cy="17" r="5" fill="#ffffff" fill-opacity="0.45" stroke="#9aa4b2" stroke-width="0.25" stroke-dasharray="1 1"/>
+<text text-anchor="middle" dominant-baseline="middle" fill="#5b6375" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="243" y="25.8" font-size="2.2" font-weight="500">고무발</tspan></text>
+<circle cx="17" cy="243" r="5" fill="#ffffff" fill-opacity="0.45" stroke="#9aa4b2" stroke-width="0.25" stroke-dasharray="1 1"/>
+<text text-anchor="middle" dominant-baseline="middle" fill="#5b6375" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="17" y="251.8" font-size="2.2" font-weight="500">고무발</tspan></text>
+<circle cx="243" cy="243" r="5" fill="#ffffff" fill-opacity="0.45" stroke="#9aa4b2" stroke-width="0.25" stroke-dasharray="1 1"/>
+<text text-anchor="middle" dominant-baseline="middle" fill="#5b6375" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="243" y="251.8" font-size="2.2" font-weight="500">고무발</tspan></text>
+<rect x="23" y="212" width="214" height="25" rx="6" fill="#fff7fb" stroke="#ffc2d1" stroke-width="0.45"/>
+<path d="M 31 217.2 L 31.684 218.316 L 32.8 219 L 31.684 219.684 L 31 220.8 L 30.316 219.684 L 29.2 219 L 30.316 218.316 Z" fill="#ff8fab" fill-opacity="0.8"/>
+<path d="M 229 228.2 L 229.684 229.316 L 230.8 230 L 229.684 230.684 L 229 231.8 L 228.316 230.684 L 227.2 230 L 228.316 229.316 Z" fill="#65c3ad" fill-opacity="0.8"/>
+<text text-anchor="middle" dominant-baseline="middle" fill="#293241" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="130" y="219" font-size="3" font-weight="600">조립 순서: 하판 → 회전 원판 → 투명 표시판 → 와셔 → 시카고 나사</tspan></text>
+<text text-anchor="middle" dominant-baseline="middle" fill="#293241" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="130" y="225.4" font-size="3" font-weight="600">재단: 260 x 260mm / 모서리 R6mm / 중앙 타공 5mm</tspan></text>
+<text text-anchor="middle" dominant-baseline="middle" fill="#293241" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="130" y="231.8" font-size="3" font-weight="600">원판이 너무 뻑뻑하면 0.2mm PET 와셔를 추가하세요.</tspan></text>
+</svg>

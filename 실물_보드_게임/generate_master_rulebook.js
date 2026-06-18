@@ -1,0 +1,694 @@
+const fs = require("fs");
+const path = require("path");
+const { execFileSync } = require("child_process");
+
+const ROOT = __dirname;
+const PRINT_DIR = path.join(ROOT, "PRINT_HTML");
+const PDF_DIR = path.join(ROOT, "PDF");
+const SVG_DIR = path.join(ROOT, "SVG");
+
+fs.mkdirSync(PRINT_DIR, { recursive: true });
+fs.mkdirSync(PDF_DIR, { recursive: true });
+
+const htmlPath = path.join(PRINT_DIR, "5도권_회전판_마스터_롤북.html");
+const pdfPath = path.join(PDF_DIR, "5도권_회전판_마스터_롤북.pdf");
+
+const svg = (name) => "../SVG/" + name;
+
+const keyRows = [
+  ["C", "Am", "0", "없음", "G", "F"],
+  ["G", "Em", "1♯", "F♯", "D", "C"],
+  ["D", "Bm", "2♯", "F♯ C♯", "A", "G"],
+  ["A", "F♯m", "3♯", "F♯ C♯ G♯", "E", "D"],
+  ["E", "C♯m", "4♯", "F♯ C♯ G♯ D♯", "B", "A"],
+  ["B / C♭", "G♯m / A♭m", "5♯ / 7♭", "F♯ C♯ G♯ D♯ A♯", "F♯", "E"],
+  ["F♯ / G♭", "D♯m / E♭m", "6♯ / 6♭", "F♯ C♯ G♯ D♯ A♯ E♯", "C♯", "B"],
+  ["D♭", "B♭m", "5♭", "B♭ E♭ A♭ D♭ G♭", "A♭", "G♭"],
+  ["A♭", "Fm", "4♭", "B♭ E♭ A♭ D♭", "E♭", "D♭"],
+  ["E♭", "Cm", "3♭", "B♭ E♭ A♭", "B♭", "A♭"],
+  ["B♭", "Gm", "2♭", "B♭ E♭", "F", "E♭"],
+  ["F", "Dm", "1♭", "B♭", "C", "B♭"],
+];
+
+const diatonicRows = [
+  ["C", "C", "Dm", "Em", "F", "G", "Am", "Bdim"],
+  ["G", "G", "Am", "Bm", "C", "D", "Em", "F♯dim"],
+  ["D", "D", "Em", "F♯m", "G", "A", "Bm", "C♯dim"],
+  ["A", "A", "Bm", "C♯m", "D", "E", "F♯m", "G♯dim"],
+  ["E", "E", "F♯m", "G♯m", "A", "B", "C♯m", "D♯dim"],
+  ["F", "F", "Gm", "Am", "B♭", "C", "Dm", "Edim"],
+  ["B♭", "B♭", "Cm", "Dm", "E♭", "F", "Gm", "Adim"],
+  ["E♭", "E♭", "Fm", "Gm", "A♭", "B♭", "Cm", "Ddim"],
+  ["A♭", "A♭", "B♭m", "Cm", "D♭", "E♭", "Fm", "Gdim"],
+  ["D♭", "D♭", "E♭m", "Fm", "G♭", "A♭", "B♭m", "Cdim"],
+];
+
+function rows(data) {
+  return data.map((row) => `<tr>${row.map((cell) => `<td>${cell}</td>`).join("")}</tr>`).join("\n");
+}
+
+const html = `<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>5도권 회전판 마스터 롤북</title>
+<style>
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: #fff; }
+  body {
+    font-family: "Malgun Gothic", "Noto Sans KR", Arial, sans-serif;
+    color: #293241;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .page {
+    width: 210mm;
+    height: 297mm;
+    padding: 16mm 16mm 14mm;
+    page-break-after: always;
+    position: relative;
+    overflow: hidden;
+    background: #fffdf7;
+  }
+  .page:last-child { page-break-after: auto; }
+  .cover {
+    padding: 0;
+    background:
+      radial-gradient(circle at 22% 18%, #ffe5ec 0 14%, transparent 15%),
+      radial-gradient(circle at 82% 24%, #d8f3dc 0 12%, transparent 13%),
+      radial-gradient(circle at 74% 78%, #cde7f0 0 15%, transparent 16%),
+      linear-gradient(145deg, #fff7fb 0%, #fffdf4 52%, #eaf8ff 100%);
+  }
+  .cover-inner {
+    position: absolute;
+    inset: 14mm;
+    border: 1.1mm solid #ffd6e7;
+    border-radius: 9mm;
+    padding: 15mm;
+  }
+  .cover h1 {
+    margin: 5mm 0 2mm;
+    font-size: 30pt;
+    line-height: 1.08;
+    letter-spacing: 0;
+  }
+  .cover .subtitle {
+    display: inline-block;
+    padding: 2.4mm 5mm;
+    border-radius: 99px;
+    background: #fff;
+    border: 0.5mm solid #ff8fab;
+    color: #d6336c;
+    font-weight: 800;
+    font-size: 12pt;
+  }
+  .cover .wheel {
+    position: absolute;
+    width: 107mm;
+    right: 11mm;
+    bottom: 21mm;
+    filter: drop-shadow(0 3mm 3mm rgba(41, 50, 65, 0.13));
+  }
+  .cover .info {
+    position: absolute;
+    left: 15mm;
+    bottom: 22mm;
+    width: 68mm;
+    font-size: 10.5pt;
+    line-height: 1.55;
+  }
+  .badge {
+    display: inline-block;
+    border-radius: 99px;
+    background: #e5f2ff;
+    color: #2f80ed;
+    border: 0.35mm solid #8ecae6;
+    font-weight: 800;
+    padding: 1.5mm 4mm;
+    font-size: 9.5pt;
+  }
+  h2 {
+    margin: 0 0 5mm;
+    font-size: 20pt;
+    line-height: 1.15;
+  }
+  h3 {
+    margin: 5mm 0 2mm;
+    font-size: 12.5pt;
+  }
+  p {
+    margin: 0 0 3.2mm;
+    font-size: 9.5pt;
+    line-height: 1.58;
+  }
+  ul, ol {
+    margin: 0 0 4mm 5mm;
+    padding: 0;
+    font-size: 9.3pt;
+    line-height: 1.55;
+  }
+  li { margin-bottom: 1.2mm; }
+  .note {
+    border-radius: 4mm;
+    background: #fff7fb;
+    border: 0.4mm solid #ffc2d1;
+    padding: 4mm;
+    margin: 4mm 0;
+  }
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5mm;
+  }
+  .grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4mm;
+  }
+  .card {
+    border: 0.35mm solid #ffd6e7;
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 4mm;
+    padding: 4mm;
+  }
+  .card.mint { border-color: #72d6bf; background: #f0fff8; }
+  .card.blue { border-color: #8ecae6; background: #f2f8ff; }
+  .card.honey { border-color: #f6c36b; background: #fff8e6; }
+  .mini-title {
+    font-weight: 900;
+    margin-bottom: 2mm;
+    color: #293241;
+  }
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 8.1pt;
+    margin: 2mm 0 4mm;
+    overflow: hidden;
+    border-radius: 3.5mm;
+    border: 0.3mm solid #dbe4ee;
+  }
+  th, td {
+    border-right: 0.2mm solid #dbe4ee;
+    border-bottom: 0.2mm solid #dbe4ee;
+    padding: 1.7mm 1.5mm;
+    text-align: center;
+    vertical-align: middle;
+  }
+  th {
+    background: #e5f2ff;
+    color: #2f506f;
+    font-weight: 900;
+  }
+  tr:nth-child(even) td { background: #fff7fb; }
+  tr:nth-child(odd) td { background: #fffef9; }
+  tr:last-child td { border-bottom: 0; }
+  th:last-child, td:last-child { border-right: 0; }
+  .footer {
+    position: absolute;
+    left: 16mm;
+    right: 16mm;
+    bottom: 8mm;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #7b8798;
+    font-size: 8pt;
+    border-top: 0.25mm solid #ffd6e7;
+    padding-top: 2mm;
+  }
+  .decor {
+    position: absolute;
+    right: 12mm;
+    top: 10mm;
+    color: #ff8fab;
+    font-size: 18pt;
+    font-weight: 900;
+  }
+  .small { font-size: 8.3pt; color: #5b6375; }
+  .svg-preview {
+    width: 100%;
+    max-height: 110mm;
+    object-fit: contain;
+  }
+  .component-row {
+    display: grid;
+    grid-template-columns: 44mm 1fr;
+    gap: 5mm;
+    align-items: center;
+    margin-bottom: 5mm;
+  }
+  .component-row img {
+    width: 44mm;
+    max-height: 44mm;
+    object-fit: contain;
+    border-radius: 4mm;
+    background: #fff;
+    border: 0.3mm solid #ffd6e7;
+    padding: 2mm;
+  }
+  .step {
+    display: grid;
+    grid-template-columns: 9mm 1fr;
+    gap: 3mm;
+    margin-bottom: 3.5mm;
+  }
+  .num {
+    width: 8mm;
+    height: 8mm;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: #ff8fab;
+    color: white;
+    font-weight: 900;
+  }
+  .callout {
+    background: #e5f2ff;
+    border: 0.35mm solid #8ecae6;
+    border-radius: 4mm;
+    padding: 3.5mm;
+  }
+  .toc {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3mm 7mm;
+    margin-top: 5mm;
+  }
+  .toc div {
+    padding: 3mm;
+    border-radius: 4mm;
+    background: rgba(255,255,255,0.72);
+    border: 0.3mm solid #ffd6e7;
+    font-weight: 800;
+  }
+  .page-num { font-weight: 900; color: #d6336c; }
+</style>
+</head>
+<body>
+  <section class="page cover">
+    <div class="cover-inner">
+      <span class="subtitle">마스터 롤북 · 교사용 운영서 · 제작 가이드</span>
+      <h1>5도권<br>회전판</h1>
+      <p style="font-size: 13pt; width: 84mm;">장조, 단조, 조표, 관계조, 딸림조, 버금딸림조, 다이어토닉 코드까지 한 번에 돌려 보는 음악 이론 교구</p>
+      <div class="info">
+        <p><strong>대상</strong> 초등 고학년부터 성인 입문자</p>
+        <p><strong>운영</strong> 1:1 레슨, 소그룹 수업, 음악 이론 게임</p>
+        <p><strong>구성</strong> 회전판, 표시판, 포인터, 미션 카드, 제작 도안</p>
+      </div>
+      <img class="wheel" src="${svg("01_회전원판_230mm.svg")}" alt="5도권 회전 원판">
+    </div>
+  </section>
+
+  <section class="page">
+    <div class="decor">♪</div>
+    <span class="badge">Overview</span>
+    <h2>이 롤북의 목적</h2>
+    <p>이 문서는 5도권 회전판을 실제 제품처럼 조립하고, 수업에서 일관되게 운영하기 위한 마스터 가이드입니다. 학습자는 원판을 돌리며 조표와 조 이름을 찾고, 이어서 관계조와 코드 기능을 직접 발견합니다.</p>
+    <div class="note">
+      <p><strong>핵심 원리:</strong> 원판의 한 칸은 5도권 1칸, 즉 30도입니다. 기준선에 조를 맞추면 주변 창이 자동으로 딸림조, 버금딸림조, 관계단조, 코드 기능을 읽어 줍니다.</p>
+    </div>
+    <h3>목차</h3>
+    <div class="toc">
+      <div><span class="page-num">01</span> 구성품과 치수</div>
+      <div><span class="page-num">02</span> 조립 순서</div>
+      <div><span class="page-num">03</span> 회전판 읽는 법</div>
+      <div><span class="page-num">04</span> 초급 운영</div>
+      <div><span class="page-num">05</span> 중급 운영</div>
+      <div><span class="page-num">06</span> 고급 운영</div>
+      <div><span class="page-num">07</span> 미션 카드 운영</div>
+      <div><span class="page-num">08</span> 제작·검수 기준</div>
+    </div>
+    <h3>수업 목표</h3>
+    <ul>
+      <li>조표의 샵·플랫 개수와 실제 붙는 음을 빠르게 확인한다.</li>
+      <li>장조와 관계단조를 한 칸 안에서 연결해 이해한다.</li>
+      <li>기준 조의 I, IV, V와 주요 다이어토닉 코드를 찾는다.</li>
+      <li>조옮김을 5도권 이동 거리로 설명한다.</li>
+      <li>세컨더리 도미넌트를 대상 코드 중심으로 찾는다.</li>
+    </ul>
+    <div class="footer"><span>5도권 회전판 마스터 롤북</span><span>2</span></div>
+  </section>
+
+  <section class="page">
+    <div class="decor">♬</div>
+    <span class="badge">Components</span>
+    <h2>구성품과 실물 치수</h2>
+    <div class="component-row">
+      <img src="${svg("01_회전원판_230mm.svg")}" alt="회전 원판">
+      <div>
+        <h3>3중 회전 원판</h3>
+        <p>지름 230mm. 바깥 원은 장조, 중간 원은 관계단조, 안쪽 원은 조표 개수와 실제 샵·플랫 음을 표시합니다.</p>
+      </div>
+    </div>
+    <div class="component-row">
+      <img src="${svg("02_투명표시판_260mm.svg")}" alt="투명 표시판">
+      <div>
+        <h3>투명 표시판</h3>
+        <p>260 x 260mm. 기준선, 현재 장조, 관계단조, 조표, IV, V, ii, vi, iii, vii° 창을 고정 표시합니다.</p>
+      </div>
+    </div>
+    <div class="component-row">
+      <img src="${svg("03_하판_260mm.svg")}" alt="하판">
+      <div>
+        <h3>하판</h3>
+        <p>260 x 260mm. 회전 원판을 받치고 중앙 타공으로 전체 구조를 고정합니다. 모서리는 R6mm를 권장합니다.</p>
+      </div>
+    </div>
+    <div class="component-row">
+      <img src="${svg("04_세컨더리도미넌트_포인터_230mm.svg")}" alt="고급 포인터">
+      <div>
+        <h3>고급 포인터</h3>
+        <p>지름 230mm 투명 포인터. 대상 코드와 V/대상 창의 간격을 30도로 두어 세컨더리 도미넌트를 찾습니다.</p>
+      </div>
+    </div>
+    <div class="footer"><span>구성품과 치수</span><span>3</span></div>
+  </section>
+
+  <section class="page">
+    <div class="decor">★</div>
+    <span class="badge">Assembly</span>
+    <h2>조립 순서</h2>
+    <div class="step"><div class="num">1</div><div><strong>하판 준비</strong><p>하판 중앙의 5mm 타공 위치를 확인하고, 네 귀퉁이에 미끄럼 방지 고무발을 붙입니다.</p></div></div>
+    <div class="step"><div class="num">2</div><div><strong>회전 원판 얹기</strong><p>회전 원판을 하판 위에 올리고 중앙 타공을 맞춥니다. 원판이 기울면 창 위치가 어긋납니다.</p></div></div>
+    <div class="step"><div class="num">3</div><div><strong>투명 표시판 고정</strong><p>투명 표시판의 기준선이 정확히 12시 방향을 향하게 놓습니다. 투명판은 회전하지 않고 고정되어야 합니다.</p></div></div>
+    <div class="step"><div class="num">4</div><div><strong>와셔와 시카고 나사 체결</strong><p>중앙에 와셔를 한 장 넣고 시카고 나사로 고정합니다. 너무 세게 조이면 회전감이 떨어집니다.</p></div></div>
+    <div class="step"><div class="num">5</div><div><strong>회전 테스트</strong><p>C, G, F를 기준선에 맞춰 각각 관계단조와 조표가 정확히 보이는지 확인합니다.</p></div></div>
+    <div class="callout">
+      <p><strong>권장 재질:</strong> 하판 1.5-2.0mm 하드보드 또는 아크릴, 원판 0.8-1.0mm PP 또는 두꺼운 카드지, 투명판 0.5-0.7mm PET, 중앙 고정부 5mm 시카고 나사.</p>
+    </div>
+    <h3>회전감 조정</h3>
+    <ul>
+      <li>너무 뻑뻑하면 얇은 PET 와셔를 추가합니다.</li>
+      <li>너무 헐거우면 종이 와셔를 제거하고 나사를 조금 더 조입니다.</li>
+      <li>표시창이 계속 틀어지면 투명 표시판과 하판을 양면테이프로 고정합니다.</li>
+    </ul>
+    <div class="footer"><span>조립 순서</span><span>4</span></div>
+  </section>
+
+  <section class="page">
+    <div class="decor">♪</div>
+    <span class="badge">How To Read</span>
+    <h2>회전판 읽는 법</h2>
+    <div class="grid-2">
+      <div>
+        <h3>기본 읽기</h3>
+        <ol>
+          <li>알고 싶은 장조를 기준선에 맞춥니다.</li>
+          <li>바깥 원에서 현재 장조를 읽습니다.</li>
+          <li>중간 원에서 관계단조를 읽습니다.</li>
+          <li>안쪽 원에서 조표 개수와 실제 붙는 음을 읽습니다.</li>
+        </ol>
+      </div>
+      <div>
+        <h3>관계 읽기</h3>
+        <ul>
+          <li>오른쪽 한 칸: V, 딸림조</li>
+          <li>왼쪽 한 칸: IV, 버금딸림조</li>
+          <li>중간 원 같은 칸: 관계단조</li>
+          <li>동단조 창: 같은 으뜸음 단조</li>
+        </ul>
+      </div>
+    </div>
+    <img class="svg-preview" src="${svg("02_투명표시판_260mm.svg")}" alt="표시판 읽기">
+    <div class="note">
+      <p><strong>예시:</strong> C를 기준선에 맞추면 현재 장조는 C, 관계단조는 Am, 조표는 없음, 딸림조는 G, 버금딸림조는 F로 읽습니다.</p>
+    </div>
+    <div class="footer"><span>회전판 읽는 법</span><span>5</span></div>
+  </section>
+
+  <section class="page">
+    <div class="decor">♬</div>
+    <span class="badge">Key Map</span>
+    <h2>조표·관계조 빠른표</h2>
+    <table>
+      <thead>
+        <tr><th>장조</th><th>관계단조</th><th>개수</th><th>조표</th><th>V</th><th>IV</th></tr>
+      </thead>
+      <tbody>${rows(keyRows)}</tbody>
+    </table>
+    <div class="grid-2">
+      <div class="card mint">
+        <div class="mini-title">샵 순서</div>
+        <p>F♯ → C♯ → G♯ → D♯ → A♯ → E♯ → B♯</p>
+      </div>
+      <div class="card blue">
+        <div class="mini-title">플랫 순서</div>
+        <p>B♭ → E♭ → A♭ → D♭ → G♭ → C♭ → F♭</p>
+      </div>
+    </div>
+    <div class="note">
+      <p>이명동음 조는 학습 단계에 따라 하나만 선택해도 됩니다. 초급은 C, G, D, A, E, F, B♭, E♭, A♭ 중심으로 운영하면 부담이 적습니다.</p>
+    </div>
+    <div class="footer"><span>조표·관계조 빠른표</span><span>6</span></div>
+  </section>
+
+  <section class="page">
+    <div class="decor">★</div>
+    <span class="badge">Beginner</span>
+    <h2>초급 운영: 조표와 조 이름</h2>
+    <p>초급의 목표는 조표를 외우기 전에 “어디에 있는지 찾는 경험”을 충분히 만드는 것입니다. 학생이 직접 돌리고 읽게 하세요.</p>
+    <div class="grid-3">
+      <div class="card mint"><div class="mini-title">1단계</div><p>기준선에 C를 맞추고 조표 없음, C, Am을 읽습니다.</p></div>
+      <div class="card mint"><div class="mini-title">2단계</div><p>G, D, F, B♭을 맞추며 샵과 플랫 개수를 비교합니다.</p></div>
+      <div class="card mint"><div class="mini-title">3단계</div><p>미션 카드를 뽑고 조표만 보고 조 이름을 찾습니다.</p></div>
+    </div>
+    <h3>교사용 진행 멘트</h3>
+    <div class="note">
+      <p>“지금은 외우는 시간이 아니라 찾는 시간이에요. 기준선에 조를 맞추고, 안쪽 창에서 조표를 읽어 봅시다. 이제 반대로 조표를 보고 바깥 원의 조 이름을 찾아볼게요.”</p>
+    </div>
+    <h3>초급 체크리스트</h3>
+    <ul>
+      <li>조표 없음이 C 장조와 Am 단조라는 것을 말할 수 있다.</li>
+      <li>샵 방향과 플랫 방향을 구분할 수 있다.</li>
+      <li>장조와 관계단조가 같은 칸에 있다는 것을 설명할 수 있다.</li>
+      <li>조표 1-3개 범위에서 장조 이름을 찾을 수 있다.</li>
+    </ul>
+    <div class="footer"><span>초급 운영</span><span>7</span></div>
+  </section>
+
+  <section class="page">
+    <div class="decor">♪</div>
+    <span class="badge">Intermediate</span>
+    <h2>중급 운영: 관계조와 조옮김</h2>
+    <p>중급에서는 5도권의 공간 감각을 사용합니다. 한 칸 이동이 곧 딸림·버금딸림 관계라는 것을 반복적으로 확인합니다.</p>
+    <div class="grid-2">
+      <div class="card blue">
+        <div class="mini-title">관계조 훈련</div>
+        <ol>
+          <li>D를 기준선에 맞춘다.</li>
+          <li>V 창에서 A를 읽는다.</li>
+          <li>IV 창에서 G를 읽는다.</li>
+          <li>중간 원에서 Bm을 읽는다.</li>
+        </ol>
+      </div>
+      <div class="card blue">
+        <div class="mini-title">조옮김 훈련</div>
+        <ol>
+          <li>출발 조와 도착 조를 찾는다.</li>
+          <li>시계방향·반시계방향을 말한다.</li>
+          <li>칸 수를 센다.</li>
+          <li>멜로디나 코드 진행에 같은 이동을 적용한다.</li>
+        </ol>
+      </div>
+    </div>
+    <h3>추천 미션</h3>
+    <ul>
+      <li>“B♭ 장조에서 C 장조로 가려면 몇 칸 이동하나요?”</li>
+      <li>“G 장조의 관계단조와 같은 으뜸음 단조를 모두 찾으세요.”</li>
+      <li>“A 장조의 IV와 V를 찾고, I-IV-V 진행을 말하세요.”</li>
+    </ul>
+    <div class="note">
+      <p>관계단조와 같은 으뜸음 단조는 이름이 비슷해 혼동되기 쉽습니다. 관계단조는 같은 칸, 같은 으뜸음 단조는 별도 창으로 읽는다고 구분해 주세요.</p>
+    </div>
+    <div class="footer"><span>중급 운영</span><span>8</span></div>
+  </section>
+
+  <section class="page">
+    <div class="decor">♬</div>
+    <span class="badge">Advanced</span>
+    <h2>고급 운영: 다이어토닉 코드</h2>
+    <p>고급 단계에서는 회전판을 코드 기능 지도처럼 사용합니다. 기준 조를 맞춘 뒤 I, ii, iii, IV, V, vi, vii° 창을 읽어 코드 진행을 만듭니다.</p>
+    <table>
+      <thead>
+        <tr><th>조</th><th>I</th><th>ii</th><th>iii</th><th>IV</th><th>V</th><th>vi</th><th>vii°</th></tr>
+      </thead>
+      <tbody>${rows(diatonicRows)}</tbody>
+    </table>
+    <div class="grid-2">
+      <div class="card honey">
+        <div class="mini-title">읽는 순서</div>
+        <p>기준선에 조를 맞춘 뒤 I, IV, V를 먼저 확인합니다. 이후 ii, vi, iii, vii°를 추가해 7개 다이어토닉 코드를 완성합니다.</p>
+      </div>
+      <div class="card honey">
+        <div class="mini-title">진행 만들기</div>
+        <p>I-vi-ii-V, I-IV-V-I, ii-V-I 같은 진행을 카드 미션으로 제시하고, 학생이 직접 회전판에서 읽어 쓰게 합니다.</p>
+      </div>
+    </div>
+    <div class="footer"><span>다이어토닉 코드</span><span>9</span></div>
+  </section>
+
+  <section class="page">
+    <div class="decor">★</div>
+    <span class="badge">Secondary Dominant</span>
+    <h2>고급 포인터: 세컨더리 도미넌트</h2>
+    <div class="grid-2">
+      <div>
+        <p>세컨더리 도미넌트는 “어떤 코드로 가고 싶은가”를 먼저 정한 뒤, 그 대상 코드의 딸림화음을 찾는 방식으로 설명하면 쉽습니다.</p>
+        <ol>
+          <li>대상 코드를 정합니다.</li>
+          <li>포인터의 대상 창을 대상 코드 루트 위에 둡니다.</li>
+          <li>오른쪽 V/대상 창에 보이는 음을 읽습니다.</li>
+          <li>그 음에 7을 붙여 도미넌트 7화음으로 사용합니다.</li>
+        </ol>
+      </div>
+      <div><img class="svg-preview" src="${svg("04_세컨더리도미넌트_포인터_230mm.svg")}" alt="세컨더리 도미넌트 포인터"></div>
+    </div>
+    <h3>예시</h3>
+    <div class="grid-3">
+      <div class="card honey"><div class="mini-title">C 장조 V/V</div><p>대상 G → 도미넌트 D7 → 해결 G</p></div>
+      <div class="card honey"><div class="mini-title">G 장조 V/ii</div><p>대상 Am → 도미넌트 E7 → 해결 Am</p></div>
+      <div class="card honey"><div class="mini-title">F 장조 V/vi</div><p>대상 Dm → 도미넌트 A7 → 해결 Dm</p></div>
+    </div>
+    <div class="note">
+      <p>처음에는 “대상 코드를 먼저 고른다”는 말만 반복해도 충분합니다. 세컨더리 도미넌트는 출발점이 아니라 목적지 중심으로 찾는 개념입니다.</p>
+    </div>
+    <div class="footer"><span>세컨더리 도미넌트</span><span>10</span></div>
+  </section>
+
+  <section class="page">
+    <div class="decor">♪</div>
+    <span class="badge">Mission Cards</span>
+    <h2>미션 카드 운영법</h2>
+    <div class="grid-3">
+      <div class="card mint"><div class="mini-title">초급 카드</div><p>조표, 조 이름, 관계장조·관계단조를 찾는 카드입니다. 제한 시간 없이 정확히 읽는 것을 목표로 합니다.</p></div>
+      <div class="card blue"><div class="mini-title">중급 카드</div><p>딸림조, 버금딸림조, 같은 으뜸음조, 조옮김 거리 찾기를 다룹니다.</p></div>
+      <div class="card honey"><div class="mini-title">고급 카드</div><p>다이어토닉 코드, ii-V-I, 세컨더리 도미넌트, 단조의 V 코드를 다룹니다.</p></div>
+    </div>
+    <h3>수업 게임 방식</h3>
+    <ul>
+      <li><strong>릴레이:</strong> 한 학생이 조를 맞추고 다음 학생이 관계조를 읽습니다.</li>
+      <li><strong>타임어택:</strong> 60초 동안 카드 5장을 해결합니다. 정확도 우선, 속도는 두 번째입니다.</li>
+      <li><strong>설명 점수:</strong> 답만 말하면 1점, 찾은 과정을 설명하면 2점입니다.</li>
+      <li><strong>작곡 연결:</strong> 카드에서 찾은 I-IV-V 또는 ii-V-I로 4마디 반주를 만듭니다.</li>
+    </ul>
+    <h3>평가 루브릭</h3>
+    <table>
+      <thead><tr><th>수준</th><th>관찰 기준</th><th>다음 과제</th></tr></thead>
+      <tbody>
+        <tr><td>입문</td><td>기준선은 맞추지만 조표 읽기가 느림</td><td>초급 카드 1-6 반복</td></tr>
+        <tr><td>기초</td><td>장조와 관계단조를 같은 칸에서 읽음</td><td>딸림·버금딸림 창 추가</td></tr>
+        <tr><td>응용</td><td>조옮김 방향과 칸 수를 설명함</td><td>I-IV-V 진행 만들기</td></tr>
+        <tr><td>심화</td><td>다이어토닉 코드와 V/대상을 찾음</td><td>짧은 코드 진행 분석</td></tr>
+      </tbody>
+    </table>
+    <div class="footer"><span>미션 카드 운영법</span><span>11</span></div>
+  </section>
+
+  <section class="page">
+    <div class="decor">♬</div>
+    <span class="badge">Production</span>
+    <h2>제작·검수 기준</h2>
+    <div class="grid-2">
+      <div class="card">
+        <div class="mini-title">인쇄 기준</div>
+        <ul>
+          <li>실제 크기 100% 출력</li>
+          <li>페이지에 맞춤 옵션 끄기</li>
+          <li>분홍 점선은 재단선</li>
+          <li>투명 부품은 PET 또는 투명 필름 사용</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="mini-title">검수 기준</div>
+        <ul>
+          <li>C 기준: Am, G, F가 정확히 보임</li>
+          <li>G 기준: Em, D, C가 정확히 보임</li>
+          <li>F 기준: Dm, C, B♭가 정확히 보임</li>
+          <li>원판이 손가락 한 개로 부드럽게 회전함</li>
+        </ul>
+      </div>
+    </div>
+    <h3>문제 해결</h3>
+    <table>
+      <thead><tr><th>문제</th><th>원인</th><th>해결</th></tr></thead>
+      <tbody>
+        <tr><td>창이 반 칸 어긋남</td><td>투명판 기준선 회전</td><td>투명판을 하판에 고정하고 재조립</td></tr>
+        <tr><td>원판이 잘 안 돌아감</td><td>중앙 나사 과조임</td><td>나사를 풀거나 얇은 와셔 추가</td></tr>
+        <tr><td>글자가 흐림</td><td>저해상도 출력 또는 잉크 번짐</td><td>PDF 원본을 100%로 재출력</td></tr>
+        <tr><td>카드 앞뒤가 안 맞음</td><td>양면 인쇄 뒤집기 방향 오류</td><td>짧은 쪽 넘김/긴 쪽 넘김 테스트 후 출력</td></tr>
+      </tbody>
+    </table>
+    <div class="note">
+      <p>초도 샘플은 최소 3개를 만들어 회전감, 창 위치, 학생의 글자 판독성을 각각 확인하는 것이 좋습니다.</p>
+    </div>
+    <div class="footer"><span>제작·검수 기준</span><span>12</span></div>
+  </section>
+
+  <section class="page">
+    <div class="decor">★</div>
+    <span class="badge">Master Copy</span>
+    <h2>한 장 요약</h2>
+    <div class="grid-2">
+      <div>
+        <h3>기본 공식</h3>
+        <ul>
+          <li>시계방향: 샵 증가</li>
+          <li>반시계방향: 플랫 증가</li>
+          <li>같은 칸: 장조와 관계단조</li>
+          <li>오른쪽 한 칸: 딸림조 V</li>
+          <li>왼쪽 한 칸: 버금딸림조 IV</li>
+        </ul>
+      </div>
+      <div>
+        <h3>고급 공식</h3>
+        <ul>
+          <li>장조 다이어토닉: I ii iii IV V vi vii°</li>
+          <li>ii-V-I는 재즈·대중음악 분석의 기본 단위</li>
+          <li>V/대상은 대상 코드의 오른쪽 한 칸</li>
+          <li>단조의 V는 화성단음계에서 장화음으로 자주 사용</li>
+        </ul>
+      </div>
+    </div>
+    <div class="note">
+      <p><strong>교사의 마무리 질문:</strong> “이 답을 어떻게 찾았나요?” 학생이 과정을 말할 수 있으면, 회전판은 단순 정답판이 아니라 사고 도구가 됩니다.</p>
+    </div>
+    <div class="grid-3">
+      <div class="card mint"><div class="mini-title">초급</div><p>조표와 조 이름을 찾는다.</p></div>
+      <div class="card blue"><div class="mini-title">중급</div><p>관계조와 조옮김을 설명한다.</p></div>
+      <div class="card honey"><div class="mini-title">고급</div><p>코드 기능과 세컨더리 도미넌트를 적용한다.</p></div>
+    </div>
+    <p class="small" style="position:absolute; left:16mm; right:16mm; bottom:20mm;">본 PDF는 5도권 회전판 실물 도안 세트와 함께 사용하는 마스터 운영 문서입니다. 인쇄 배포 시 A4, 실제 크기 100% 출력 권장.</p>
+    <div class="footer"><span>마스터 요약</span><span>13</span></div>
+  </section>
+</body>
+</html>`;
+
+fs.writeFileSync(htmlPath, html, "utf8");
+
+const chromeCandidates = [
+  "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+  "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe",
+  "C:\\Program Files\\Microsoft\\Edge\\Application\\msedge.exe",
+  "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+];
+
+const browser = chromeCandidates.find((candidate) => fs.existsSync(candidate));
+if (!browser) {
+  console.log(`HTML written: ${htmlPath}`);
+  console.log("PDF was not generated because Chrome or Edge was not found.");
+  process.exit(0);
+}
+
+execFileSync(browser, [
+  "--headless=new",
+  "--disable-gpu",
+  "--no-pdf-header-footer",
+  `--print-to-pdf=${pdfPath}`,
+  new URL("file:///" + htmlPath.replace(/\\/g, "/")).href,
+], { stdio: "inherit" });
+
+console.log(`HTML written: ${htmlPath}`);
+console.log(`PDF written: ${pdfPath}`);

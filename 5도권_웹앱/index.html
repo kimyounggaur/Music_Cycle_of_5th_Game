@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>5도권 회전판 · Circle of Fifths</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">♪</span>
+      <div>
+        <h1>5도권 회전판</h1>
+        <p class="brand-sub">Circle of Fifths Learning Wheel</p>
+      </div>
+    </div>
+    <div class="toolbar">
+      <div class="seg-toggle" id="level-toggle" role="tablist" aria-label="학습 단계">
+        <button role="tab" data-level="beginner" class="active">초급</button>
+        <button role="tab" data-level="intermediate">중급</button>
+        <button role="tab" data-level="advanced">고급</button>
+      </div>
+      <button id="spin-btn" class="btn btn-primary" title="Space">🎡 돌리기</button>
+      <label class="switch"><input type="checkbox" id="sound-toggle"> 소리</label>
+      <label class="switch" id="sd-switch" hidden><input type="checkbox" id="sd-toggle"> 세컨더리 도미넌트</label>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="stage">
+      <div class="wheel-wrap">
+        <svg id="wheel-svg" viewBox="0 0 260 260" aria-label="5도권 회전판" role="img" tabindex="0">
+          <g id="board"></g>      <!-- [0] 정적 하판 -->
+          <g id="disc"></g>       <!-- [1] 회전 원판 (이것만 돈다) -->
+          <g id="pointer"></g>    <!-- [3] 세컨더리 도미넌트 포인터 -->
+          <g id="overlay"></g>    <!-- [2] 정적 표시판 창 -->
+          <g id="indicator"></g>  <!-- [4] 기준선 마커 -->
+        </svg>
+      </div>
+      <p class="hint">원판을 <b>드래그</b>해서 돌리거나 <b>돌리기</b> 버튼을 누르세요 · ← → 한 칸 이동</p>
+      <div class="chips" id="key-chips" aria-label="조성 빠른 선택"></div>
+    </section>
+
+    <aside class="panel" id="info-panel" aria-live="off">
+      <div class="now">
+        <div class="now-key" id="now-major">C</div>
+        <div class="now-ko" id="now-majorko">다장조</div>
+      </div>
+      <div class="rows" id="info-rows"></div>
+      <div class="diatonic" id="diatonic-box" hidden>
+        <div class="box-title">다이어토닉 7화음</div>
+        <div class="chip-row" id="diatonic-chips"></div>
+        <div class="sd-result" id="sd-result" hidden></div>
+      </div>
+    </aside>
+  </main>
+
+  <section class="cards" id="card-panel">
+    <div class="cards-head">
+      <h2>미션 카드</h2>
+      <div class="score">점수 <span id="score">0</span></div>
+    </div>
+    <div class="card-stage">
+      <div class="mission-card" id="mission-card" data-face="empty">
+        <div class="card-face card-front">
+          <div class="card-id" id="card-id">초급</div>
+          <div class="card-q" id="card-q">‘카드 뽑기’를 눌러 시작하세요.</div>
+        </div>
+        <div class="card-face card-back" hidden>
+          <div class="card-id" id="card-id-back"></div>
+          <div class="card-a" id="card-a"></div>
+        </div>
+      </div>
+    </div>
+    <div class="card-controls">
+      <button class="btn" id="draw-btn">카드 뽑기</button>
+      <button class="btn" id="reveal-btn" disabled>정답 확인</button>
+      <span class="score-add" hidden id="score-add">
+        <button class="btn btn-ghost" data-pt="1">정답 +1</button>
+        <button class="btn btn-ghost" data-pt="2">설명까지 +2</button>
+      </span>
+      <span class="deck-info" id="deck-info"></span>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <span>시계방향 라벨 = ♯ 증가 · 반시계 = ♭ 증가 (원판은 손가락을 따라 직접 회전)</span>
+  </footer>
+
+  <div aria-live="polite" class="sr-only" id="aria-live"></div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

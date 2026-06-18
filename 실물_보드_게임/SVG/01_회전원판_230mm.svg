@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="230mm" height="230mm" viewBox="0 0 230 230">
+<title>5도권 회전 원판 230mm</title>
+<desc>바깥 원은 장조, 중간 원은 관계단조, 안쪽 원은 조표 정보를 표시한다.</desc>
+<defs>
+  <style>
+    .cut { fill: none; stroke: #ff5d8f; stroke-width: 0.35; stroke-dasharray: 2 1.5; }
+    .score { fill: none; stroke: #9aa4b2; stroke-width: 0.25; stroke-dasharray: 1 1; }
+    .guide { fill: none; stroke: #293241; stroke-width: 0.35; }
+    .tiny { font-size: 2.8px; fill: #5b6375; font-family: "Malgun Gothic", "Noto Sans KR", Arial, sans-serif; }
+  </style>
+</defs>
+<rect x="0.2" y="0.2" width="229.6" height="229.6" rx="6" fill="#fff7fb" stroke="#ffd6e7" stroke-width="0.2"/>
+<circle cx="115" cy="115" r="114" fill="#fffef9" stroke="#ffd1dc" stroke-width="1.2"/>
+<path d="M 100.317 9.327 L 100.773 10.071 L 101.517 10.527 L 100.773 10.983 L 100.317 11.727 L 99.861 10.983 L 99.117 10.527 L 99.861 10.071 Z" fill="#ff8fab" fill-opacity="0.72"/>
+<text x="139.55" y="10.135" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" font-size="3" font-weight="800" fill="#65c3ad" fill-opacity="0.72" transform="rotate(4.392 139.55 10.135)">♪</text>
+<path d="M 177.015 22.369 L 177.737 23.547 L 178.915 24.269 L 177.737 24.991 L 177.015 26.169 L 176.293 24.991 L 175.115 24.269 L 176.293 23.547 Z" fill="#8ecae6" fill-opacity="0.72"/>
+<text x="201.976" y="55.289" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" font-size="3" font-weight="800" fill="#f5a742" fill-opacity="0.72" transform="rotate(18.51 201.976 55.289)">♬</text>
+<path d="M 219.814 88.684 L 220.403 89.645 L 221.364 90.234 L 220.403 90.823 L 219.814 91.784 L 219.225 90.823 L 218.264 90.234 L 219.225 89.645 Z" fill="#9b7ede" fill-opacity="0.72"/>
+<text x="223.862" y="130.072" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" font-size="3" font-weight="800" fill="#ff8fab" fill-opacity="0.72" transform="rotate(32.627 223.862 130.072)">♪</text>
+<path d="M 207.22 165.042 L 207.676 165.786 L 208.42 166.242 L 207.676 166.698 L 207.22 167.442 L 206.764 166.698 L 206.02 166.242 L 206.764 165.786 Z" fill="#65c3ad" fill-opacity="0.72"/>
+<text x="183.889" y="197.787" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" font-size="3" font-weight="800" fill="#8ecae6" fill-opacity="0.72" transform="rotate(46.745 183.889 197.787)">♬</text>
+<path d="M 150.032 217.267 L 150.754 218.445 L 151.932 219.167 L 150.754 219.889 L 150.032 221.067 L 149.31 219.889 L 148.132 219.167 L 149.31 218.445 Z" fill="#f5a742" fill-opacity="0.72"/>
+<text x="110.236" y="220.392" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" font-size="3" font-weight="800" fill="#9b7ede" fill-opacity="0.72" transform="rotate(60.863 110.236 220.392)">♪</text>
+<path d="M 71.599 212.018 L 72.188 212.979 L 73.149 213.568 L 72.188 214.157 L 71.599 215.118 L 71.01 214.157 L 70.049 213.568 L 71.01 212.979 Z" fill="#ff8fab" fill-opacity="0.72"/>
+<text x="37.369" y="192.791" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" font-size="3" font-weight="800" fill="#65c3ad" fill-opacity="0.72" transform="rotate(74.98 37.369 192.791)">♬</text>
+<path d="M 18.533 156.513 L 18.989 157.257 L 19.733 157.713 L 18.989 158.169 L 18.533 158.913 L 18.077 158.169 L 17.333 157.713 L 18.077 157.257 Z" fill="#8ecae6" fill-opacity="0.72"/>
+<text x="7.42" y="120.084" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" font-size="3" font-weight="800" fill="#f5a742" fill-opacity="0.72" transform="rotate(89.098 7.42 120.084)">♪</text>
+<path d="M 10.761 78.282 L 11.483 79.46 L 12.661 80.182 L 11.483 80.904 L 10.761 82.082 L 10.039 80.904 L 8.861 80.182 L 10.039 79.46 Z" fill="#9b7ede" fill-opacity="0.72"/>
+<text x="33.766" y="47.685" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" font-size="3" font-weight="800" fill="#ff8fab" fill-opacity="0.72" transform="rotate(103.216 33.766 47.685)">♬</text>
+<path d="M 62.496 19.415 L 63.085 20.376 L 64.046 20.965 L 63.085 21.554 L 62.496 22.515 L 61.907 21.554 L 60.946 20.965 L 61.907 20.376 Z" fill="#65c3ad" fill-opacity="0.72"/>
+<text x="99.705" y="6.17" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" font-size="3" font-weight="800" fill="#8ecae6" fill-opacity="0.72" transform="rotate(117.333 99.705 6.17)">♪</text>
+<circle cx="115" cy="115" r="115" class="cut"/>
+<path d="M 86.142 7.299 A 111.5 111.5 0 0 1 143.858 7.299 L 136.741 33.862 A 84 84 0 0 0 93.259 33.862 Z" fill="#ffe5ec" stroke="#fffefa" stroke-width="1.05"/>
+<path d="M 93.259 33.862 A 84 84 0 0 1 136.741 33.862 L 129.494 60.908 A 56 56 0 0 0 100.506 60.908 Z" fill="#ffe5ec" fill-opacity="0.82" stroke="#fffefa" stroke-width="1.05"/>
+<path d="M 100.506 60.908 A 56 56 0 0 1 129.494 60.908 L 122.247 87.954 A 28 28 0 0 0 107.753 87.954 Z" fill="#ffe5ec" fill-opacity="0.64" stroke="#fffefa" stroke-width="1.05"/>
+<circle cx="115" cy="6" r="1.2" fill="#ffffff" fill-opacity="0.85"/>
+<path d="M 143.858 7.299 A 111.5 111.5 0 0 1 193.842 36.158 L 174.397 55.603 A 84 84 0 0 0 136.741 33.862 Z" fill="#d8f3dc" stroke="#fffefa" stroke-width="1.05"/>
+<path d="M 136.741 33.862 A 84 84 0 0 1 174.397 55.603 L 154.598 75.402 A 56 56 0 0 0 129.494 60.908 Z" fill="#d8f3dc" fill-opacity="0.82" stroke="#fffefa" stroke-width="1.05"/>
+<path d="M 129.494 60.908 A 56 56 0 0 1 154.598 75.402 L 134.799 95.201 A 28 28 0 0 0 122.247 87.954 Z" fill="#d8f3dc" fill-opacity="0.64" stroke="#fffefa" stroke-width="1.05"/>
+<circle cx="169.5" cy="20.603" r="1.2" fill="#ffffff" fill-opacity="0.85"/>
+<path d="M 193.842 36.158 A 111.5 111.5 0 0 1 222.701 86.142 L 196.138 93.259 A 84 84 0 0 0 174.397 55.603 Z" fill="#cde7f0" stroke="#fffefa" stroke-width="1.05"/>
+<path d="M 174.397 55.603 A 84 84 0 0 1 196.138 93.259 L 169.092 100.506 A 56 56 0 0 0 154.598 75.402 Z" fill="#cde7f0" fill-opacity="0.82" stroke="#fffefa" stroke-width="1.05"/>
+<path d="M 154.598 75.402 A 56 56 0 0 1 169.092 100.506 L 142.046 107.753 A 28 28 0 0 0 134.799 95.201 Z" fill="#cde7f0" fill-opacity="0.64" stroke="#fffefa" stroke-width="1.05"/>
+<circle cx="209.397" cy="60.5" r="1.2" fill="#ffffff" fill-opacity="0.85"/>
+<path d="M 222.701 86.142 A 111.5 111.5 0 0 1 222.701 143.858 L 196.138 136.741 A 84 84 0 0 0 196.138 93.259 Z" fill="#fff1c1" stroke="#fffefa" stroke-width="1.05"/>
+<path d="M 196.138 93.259 A 84 84 0 0 1 196.138 136.741 L 169.092 129.494 A 56 56 0 0 0 169.092 100.506 Z" fill="#fff1c1" fill-opacity="0.82" stroke="#fffefa" stroke-width="1.05"/>
+<path d="M 169.092 100.506 A 56 56 0 0 1 169.092 129.494 L 142.046 122.247 A 28 28 0 0 0 142.046 107.753 Z" fill="#fff1c1" fill-opacity="0.64" stroke="#fffefa" stroke-width="1.05"/>
+<circle cx="224" cy="115" r="1.2" fill="#ffffff" fill-opacity="0.85"/>
+<path d="M 222.701 143.858 A 111.5 111.5 0 0 1 193.842 193.842 L 174.397 174.397 A 84 84 0 0 0 196.138 136.741 Z" fill="#eadcf8" stroke="#fffefa" stroke-width="1.05"/>
+<path d="M 196.138 136.741 A 84 84 0 0 1 174.397 174.397 L 154.598 154.598 A 56 56 0 0 0 169.092 129.494 Z" fill="#eadcf8" fill-opacity="0.82" stroke="#fffefa" stroke-width="1.05"/>
+<path d="M 169.092 129.494 A 56 56 0 0 1 154.598 154.598 L 134.799 134.799 A 28 28 0 0 0 142.046 122.247 Z" fill="#eadcf8" fill-opacity="0.64" stroke="#fffefa" stroke-width="1.05"/>
+<circle cx="209.397" cy="169.5" r="1.2" fill="#ffffff" fill-opacity="0.85"/>
+<path d="M 193.842 193.842 A 111.5 111.5 0 0 1 143.858 222.701 L 136.741 196.138 A 84 84 0 0 0 174.397 174.397 Z" fill="#c8f7f2" stroke="#fffefa" stroke-width="1.05"/>
+<path d="M 174.397 174.397 A 84 84 0 0 1 136.741 196.138 L 129.494 169.092 A 56 56 0 0 0 154.598 154.598 Z" fill="#c8f7f2" fill-opacity="0.82" stroke="#fffefa" stroke-width="1.05"/>
+<path d="M 154.598 154.598 A 56 56 0 0 1 129.494 169.092 L 122.247 142.046 A 28 28 0 0 0 134.799 134.799 Z" fill="#c8f7f2" fill-opacity="0.64" stroke="#fffefa" stroke-width="1.05"/>
+<circle cx="169.5" cy="209.397" r="1.2" fill="#ffffff" fill-opacity="0.85"/>
+<path d="M 143.858 222.701 A 111.5 111.5 0 0 1 86.142 222.701 L 93.259 196.138 A 84 84 0 0 0 136.741 196.138 Z" fill="#ffd6a5" stroke="#fffefa" stroke-width="1.05"/>
+<path d="M 136.741 196.138 A 84 84 0 0 1 93.259 196.138 L 100.506 169.092 A 56 56 0 0 0 129.494 169.092 Z" fill="#ffd6a5" fill-opacity="0.82" stroke="#fffefa" stroke-width="1.05"/>
+<path d="M 129.494 169.092 A 56 56 0 0 1 100.506 169.092 L 107.753 142.046 A 28 28 0 0 0 122.247 142.046 Z" fill="#ffd6a5" fill-opacity="0.64" stroke="#fffefa" stroke-width="1.05"/>
+<circle cx="115" cy="224" r="1.2" fill="#ffffff" fill-opacity="0.85"/>
+<path d="M 86.142 222.701 A 111.5 111.5 0 0 1 36.158 193.842 L 55.603 174.397 A 84 84 0 0 0 93.259 196.138 Z" fill="#cdb4db" stroke="#fffefa" stroke-width="1.05"/>
+<path d="M 93.259 196.138 A 84 84 0 0 1 55.603 174.397 L 75.402 154.598 A 56 56 0 0 0 100.506 169.092 Z" fill="#cdb4db" fill-opacity="0.82" stroke="#fffefa" stroke-width="1.05"/>
+<path d="M 100.506 169.092 A 56 56 0 0 1 75.402 154.598 L 95.201 134.799 A 28 28 0 0 0 107.753 142.046 Z" fill="#cdb4db" fill-opacity="0.64" stroke="#fffefa" stroke-width="1.05"/>
+<circle cx="60.5" cy="209.397" r="1.2" fill="#ffffff" fill-opacity="0.85"/>
+<path d="M 36.158 193.842 A 111.5 111.5 0 0 1 7.299 143.858 L 33.862 136.741 A 84 84 0 0 0 55.603 174.397 Z" fill="#bde0fe" stroke="#fffefa" stroke-width="1.05"/>
+<path d="M 55.603 174.397 A 84 84 0 0 1 33.862 136.741 L 60.908 129.494 A 56 56 0 0 0 75.402 154.598 Z" fill="#bde0fe" fill-opacity="0.82" stroke="#fffefa" stroke-width="1.05"/>
+<path d="M 75.402 154.598 A 56 56 0 0 1 60.908 129.494 L 87.954 122.247 A 28 28 0 0 0 95.201 134.799 Z" fill="#bde0fe" fill-opacity="0.64" stroke="#fffefa" stroke-width="1.05"/>
+<circle cx="20.603" cy="169.5" r="1.2" fill="#ffffff" fill-opacity="0.85"/>
+<path d="M 7.299 143.858 A 111.5 111.5 0 0 1 7.299 86.142 L 33.862 93.259 A 84 84 0 0 0 33.862 136.741 Z" fill="#fad2e1" stroke="#fffefa" stroke-width="1.05"/>
+<path d="M 33.862 136.741 A 84 84 0 0 1 33.862 93.259 L 60.908 100.506 A 56 56 0 0 0 60.908 129.494 Z" fill="#fad2e1" fill-opacity="0.82" stroke="#fffefa" stroke-width="1.05"/>
+<path d="M 60.908 129.494 A 56 56 0 0 1 60.908 100.506 L 87.954 107.753 A 28 28 0 0 0 87.954 122.247 Z" fill="#fad2e1" fill-opacity="0.64" stroke="#fffefa" stroke-width="1.05"/>
+<circle cx="6" cy="115" r="1.2" fill="#ffffff" fill-opacity="0.85"/>
+<path d="M 7.299 86.142 A 111.5 111.5 0 0 1 36.158 36.158 L 55.603 55.603 A 84 84 0 0 0 33.862 93.259 Z" fill="#d0f4de" stroke="#fffefa" stroke-width="1.05"/>
+<path d="M 33.862 93.259 A 84 84 0 0 1 55.603 55.603 L 75.402 75.402 A 56 56 0 0 0 60.908 100.506 Z" fill="#d0f4de" fill-opacity="0.82" stroke="#fffefa" stroke-width="1.05"/>
+<path d="M 60.908 100.506 A 56 56 0 0 1 75.402 75.402 L 95.201 95.201 A 28 28 0 0 0 87.954 107.753 Z" fill="#d0f4de" fill-opacity="0.64" stroke="#fffefa" stroke-width="1.05"/>
+<circle cx="20.603" cy="60.5" r="1.2" fill="#ffffff" fill-opacity="0.85"/>
+<path d="M 36.158 36.158 A 111.5 111.5 0 0 1 86.142 7.299 L 93.259 33.862 A 84 84 0 0 0 55.603 55.603 Z" fill="#ffcad4" stroke="#fffefa" stroke-width="1.05"/>
+<path d="M 55.603 55.603 A 84 84 0 0 1 93.259 33.862 L 100.506 60.908 A 56 56 0 0 0 75.402 75.402 Z" fill="#ffcad4" fill-opacity="0.82" stroke="#fffefa" stroke-width="1.05"/>
+<path d="M 75.402 75.402 A 56 56 0 0 1 100.506 60.908 L 107.753 87.954 A 28 28 0 0 0 95.201 95.201 Z" fill="#ffcad4" fill-opacity="0.64" stroke="#fffefa" stroke-width="1.05"/>
+<circle cx="60.5" cy="20.603" r="1.2" fill="#ffffff" fill-opacity="0.85"/>
+<circle cx="115" cy="115" r="112" fill="none" stroke="#7b8798" stroke-width="0.28"/>
+<circle cx="115" cy="115" r="84" fill="none" stroke="#7b8798" stroke-width="0.28"/>
+<circle cx="115" cy="115" r="56" fill="none" stroke="#7b8798" stroke-width="0.28"/>
+<circle cx="115" cy="115" r="28" fill="none" stroke="#7b8798" stroke-width="0.28"/>
+<line x1="107.753" y1="87.954" x2="86.012" y2="6.816" stroke="#ffffff" stroke-width="0.75" />
+<line x1="107.753" y1="87.954" x2="86.012" y2="6.816" stroke="#adb5bd" stroke-width="0.16" />
+<line x1="122.247" y1="87.954" x2="143.988" y2="6.816" stroke="#ffffff" stroke-width="0.75" />
+<line x1="122.247" y1="87.954" x2="143.988" y2="6.816" stroke="#adb5bd" stroke-width="0.16" />
+<line x1="134.799" y1="95.201" x2="194.196" y2="35.804" stroke="#ffffff" stroke-width="0.75" />
+<line x1="134.799" y1="95.201" x2="194.196" y2="35.804" stroke="#adb5bd" stroke-width="0.16" />
+<line x1="142.046" y1="107.753" x2="223.184" y2="86.012" stroke="#ffffff" stroke-width="0.75" />
+<line x1="142.046" y1="107.753" x2="223.184" y2="86.012" stroke="#adb5bd" stroke-width="0.16" />
+<line x1="142.046" y1="122.247" x2="223.184" y2="143.988" stroke="#ffffff" stroke-width="0.75" />
+<line x1="142.046" y1="122.247" x2="223.184" y2="143.988" stroke="#adb5bd" stroke-width="0.16" />
+<line x1="134.799" y1="134.799" x2="194.196" y2="194.196" stroke="#ffffff" stroke-width="0.75" />
+<line x1="134.799" y1="134.799" x2="194.196" y2="194.196" stroke="#adb5bd" stroke-width="0.16" />
+<line x1="122.247" y1="142.046" x2="143.988" y2="223.184" stroke="#ffffff" stroke-width="0.75" />
+<line x1="122.247" y1="142.046" x2="143.988" y2="223.184" stroke="#adb5bd" stroke-width="0.16" />
+<line x1="107.753" y1="142.046" x2="86.012" y2="223.184" stroke="#ffffff" stroke-width="0.75" />
+<line x1="107.753" y1="142.046" x2="86.012" y2="223.184" stroke="#adb5bd" stroke-width="0.16" />
+<line x1="95.201" y1="134.799" x2="35.804" y2="194.196" stroke="#ffffff" stroke-width="0.75" />
+<line x1="95.201" y1="134.799" x2="35.804" y2="194.196" stroke="#adb5bd" stroke-width="0.16" />
+<line x1="87.954" y1="122.247" x2="6.816" y2="143.988" stroke="#ffffff" stroke-width="0.75" />
+<line x1="87.954" y1="122.247" x2="6.816" y2="143.988" stroke="#adb5bd" stroke-width="0.16" />
+<line x1="87.954" y1="107.753" x2="6.816" y2="86.012" stroke="#ffffff" stroke-width="0.75" />
+<line x1="87.954" y1="107.753" x2="6.816" y2="86.012" stroke="#adb5bd" stroke-width="0.16" />
+<line x1="95.201" y1="95.201" x2="35.804" y2="35.804" stroke="#ffffff" stroke-width="0.75" />
+<line x1="95.201" y1="95.201" x2="35.804" y2="35.804" stroke="#adb5bd" stroke-width="0.16" />
+<text text-anchor="middle" dominant-baseline="middle" fill="#293241" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="115" y="13.4" font-size="8.2" font-weight="800">C</tspan><tspan x="115" y="18.6" font-size="2.8" font-weight="500">다장조</tspan></text>
+<text text-anchor="middle" dominant-baseline="middle" fill="#374151" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="115" y="42.65" font-size="6.2" font-weight="750">Am</tspan><tspan x="115" y="47.35" font-size="2.35" font-weight="500">가단조</tspan></text>
+<text text-anchor="middle" dominant-baseline="middle" fill="#66545e" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="115" y="70.95" font-size="4.5" font-weight="800">조표 없음</tspan><tspan x="115" y="75.05" font-size="3.25" font-weight="500">0</tspan></text>
+<text text-anchor="middle" dominant-baseline="middle" fill="#293241" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="164.5" y="26.663" font-size="8.2" font-weight="800">G</tspan><tspan x="164.5" y="31.863" font-size="2.8" font-weight="500">사장조</tspan></text>
+<text text-anchor="middle" dominant-baseline="middle" fill="#374151" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="150" y="52.028" font-size="6.2" font-weight="750">Em</tspan><tspan x="150" y="56.728" font-size="2.35" font-weight="500">마단조</tspan></text>
+<text text-anchor="middle" dominant-baseline="middle" fill="#66545e" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="136" y="76.577" font-size="4.5" font-weight="800">1♯</tspan><tspan x="136" y="80.677" font-size="3.25" font-weight="500">F♯</tspan></text>
+<text text-anchor="middle" dominant-baseline="middle" fill="#293241" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="200.737" y="62.9" font-size="8.2" font-weight="800">D</tspan><tspan x="200.737" y="68.1" font-size="2.8" font-weight="500">라장조</tspan></text>
+<text text-anchor="middle" dominant-baseline="middle" fill="#374151" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="175.622" y="77.65" font-size="6.2" font-weight="750">Bm</tspan><tspan x="175.622" y="82.35" font-size="2.35" font-weight="500">나단조</tspan></text>
+<text text-anchor="middle" dominant-baseline="middle" fill="#66545e" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="151.373" y="91.95" font-size="4.5" font-weight="800">2♯</tspan><tspan x="151.373" y="96.05" font-size="3.25" font-weight="500">F♯ C♯</tspan></text>
+<text text-anchor="middle" dominant-baseline="middle" fill="#293241" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="214" y="112.4" font-size="8.2" font-weight="800">A</tspan><tspan x="214" y="117.6" font-size="2.8" font-weight="500">가장조</tspan></text>
+<text text-anchor="middle" dominant-baseline="middle" fill="#374151" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="185" y="112.65" font-size="6.2" font-weight="750">F♯m</tspan><tspan x="185" y="117.35" font-size="2.35" font-weight="500">올림바단조</tspan></text>
+<text text-anchor="middle" dominant-baseline="middle" fill="#66545e" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="157" y="112.95" font-size="4.5" font-weight="800">3♯</tspan><tspan x="157" y="117.05" font-size="3.25" font-weight="500">F♯ C♯ G♯</tspan></text>
+<text text-anchor="middle" dominant-baseline="middle" fill="#293241" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="200.737" y="161.9" font-size="8.2" font-weight="800">E</tspan><tspan x="200.737" y="167.1" font-size="2.8" font-weight="500">마장조</tspan></text>
+<text text-anchor="middle" dominant-baseline="middle" fill="#374151" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="175.622" y="147.65" font-size="6.2" font-weight="750">C♯m</tspan><tspan x="175.622" y="152.35" font-size="2.35" font-weight="500">올림다단조</tspan></text>
+<text text-anchor="middle" dominant-baseline="middle" fill="#66545e" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="151.373" y="133.95" font-size="4.5" font-weight="800">4♯</tspan><tspan x="151.373" y="138.05" font-size="3.25" font-weight="500">F♯ C♯ G♯ D♯</tspan></text>
+<text text-anchor="middle" dominant-baseline="middle" fill="#293241" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="164.5" y="198.137" font-size="8.2" font-weight="800">B / C♭</tspan><tspan x="164.5" y="203.337" font-size="2.8" font-weight="500">나장조 / 내림다장조</tspan></text>
+<text text-anchor="middle" dominant-baseline="middle" fill="#374151" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="150" y="173.272" font-size="4.4" font-weight="750">G♯m / A♭m</tspan><tspan x="150" y="177.972" font-size="2.35" font-weight="500">올림사단조 / 내림가단조</tspan></text>
+<text text-anchor="middle" dominant-baseline="middle" fill="#66545e" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="136" y="149.323" font-size="4.5" font-weight="800">5♯ / 7♭</tspan><tspan x="136" y="153.423" font-size="2.6" font-weight="500">F♯ C♯ G♯ D♯ A♯</tspan></text>
+<text text-anchor="middle" dominant-baseline="middle" fill="#293241" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="115" y="211.4" font-size="5.8" font-weight="800">F♯ / G♭</tspan><tspan x="115" y="216.6" font-size="2.8" font-weight="500">올림바장조 / 내림사장조</tspan></text>
+<text text-anchor="middle" dominant-baseline="middle" fill="#374151" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="115" y="182.65" font-size="4.4" font-weight="750">D♯m / E♭m</tspan><tspan x="115" y="187.35" font-size="2.35" font-weight="500">올림라단조 / 내림마단조</tspan></text>
+<text text-anchor="middle" dominant-baseline="middle" fill="#66545e" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="115" y="154.95" font-size="4.5" font-weight="800">6♯ / 6♭</tspan><tspan x="115" y="159.05" font-size="2.6" font-weight="500">F♯ C♯ G♯ D♯ A♯ E♯</tspan></text>
+<text text-anchor="middle" dominant-baseline="middle" fill="#293241" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="65.5" y="198.137" font-size="5.8" font-weight="800">C♯ / D♭</tspan><tspan x="65.5" y="203.337" font-size="2.8" font-weight="500">올림다장조 / 내림라장조</tspan></text>
+<text text-anchor="middle" dominant-baseline="middle" fill="#374151" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="80" y="173.272" font-size="4.4" font-weight="750">A♯m / B♭m</tspan><tspan x="80" y="177.972" font-size="2.35" font-weight="500">올림가단조 / 내림나단조</tspan></text>
+<text text-anchor="middle" dominant-baseline="middle" fill="#66545e" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="94" y="149.323" font-size="4.5" font-weight="800">7♯ / 5♭</tspan><tspan x="94" y="153.423" font-size="2.6" font-weight="500">B♭ E♭ A♭ D♭ G♭</tspan></text>
+<text text-anchor="middle" dominant-baseline="middle" fill="#293241" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="29.263" y="161.9" font-size="8.2" font-weight="800">A♭</tspan><tspan x="29.263" y="167.1" font-size="2.8" font-weight="500">내림가장조</tspan></text>
+<text text-anchor="middle" dominant-baseline="middle" fill="#374151" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="54.378" y="147.65" font-size="6.2" font-weight="750">Fm</tspan><tspan x="54.378" y="152.35" font-size="2.35" font-weight="500">바단조</tspan></text>
+<text text-anchor="middle" dominant-baseline="middle" fill="#66545e" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="78.627" y="133.95" font-size="4.5" font-weight="800">4♭</tspan><tspan x="78.627" y="138.05" font-size="3.25" font-weight="500">B♭ E♭ A♭ D♭</tspan></text>
+<text text-anchor="middle" dominant-baseline="middle" fill="#293241" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="16" y="112.4" font-size="8.2" font-weight="800">E♭</tspan><tspan x="16" y="117.6" font-size="2.8" font-weight="500">내림마장조</tspan></text>
+<text text-anchor="middle" dominant-baseline="middle" fill="#374151" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="45" y="112.65" font-size="6.2" font-weight="750">Cm</tspan><tspan x="45" y="117.35" font-size="2.35" font-weight="500">다단조</tspan></text>
+<text text-anchor="middle" dominant-baseline="middle" fill="#66545e" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="73" y="112.95" font-size="4.5" font-weight="800">3♭</tspan><tspan x="73" y="117.05" font-size="3.25" font-weight="500">B♭ E♭ A♭</tspan></text>
+<text text-anchor="middle" dominant-baseline="middle" fill="#293241" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="29.263" y="62.9" font-size="8.2" font-weight="800">B♭</tspan><tspan x="29.263" y="68.1" font-size="2.8" font-weight="500">내림나장조</tspan></text>
+<text text-anchor="middle" dominant-baseline="middle" fill="#374151" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="54.378" y="77.65" font-size="6.2" font-weight="750">Gm</tspan><tspan x="54.378" y="82.35" font-size="2.35" font-weight="500">사단조</tspan></text>
+<text text-anchor="middle" dominant-baseline="middle" fill="#66545e" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="78.627" y="91.95" font-size="4.5" font-weight="800">2♭</tspan><tspan x="78.627" y="96.05" font-size="3.25" font-weight="500">B♭ E♭</tspan></text>
+<text text-anchor="middle" dominant-baseline="middle" fill="#293241" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="65.5" y="26.663" font-size="8.2" font-weight="800">F</tspan><tspan x="65.5" y="31.863" font-size="2.8" font-weight="500">바장조</tspan></text>
+<text text-anchor="middle" dominant-baseline="middle" fill="#374151" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="80" y="52.028" font-size="6.2" font-weight="750">Dm</tspan><tspan x="80" y="56.728" font-size="2.35" font-weight="500">라단조</tspan></text>
+<text text-anchor="middle" dominant-baseline="middle" fill="#66545e" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="94" y="76.577" font-size="4.5" font-weight="800">1♭</tspan><tspan x="94" y="80.677" font-size="3.25" font-weight="500">B♭</tspan></text>
+<circle cx="115" cy="115" r="27.2" fill="#ffffff" stroke="#ffc2d1" stroke-width="1.1"/>
+<circle cx="115" cy="115" r="22.4" fill="#fff7fb" stroke="#bde0fe" stroke-width="0.45" stroke-dasharray="1.6 1.1"/>
+<path d="M 97.8 94.7 L 98.598 96.002 L 99.9 96.8 L 98.598 97.598 L 97.8 98.9 L 97.002 97.598 L 95.7 96.8 L 97.002 96.002 Z" fill="#ff8fab" fill-opacity="0.9"/>
+<text x="132.4" y="97.5" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" font-size="5.2" font-weight="800" fill="#65c3ad" fill-opacity="0.95" transform="rotate(14 132.4 97.5)">♪</text>
+<text text-anchor="middle" dominant-baseline="middle" fill="#293241" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="115" y="101.7" font-size="7.2" font-weight="850">5도권</tspan><tspan x="115" y="107.9" font-size="3.7" font-weight="650">회전 원판</tspan></text>
+<text text-anchor="middle" dominant-baseline="middle" fill="#5b6375" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="115" y="118" font-size="3.15" font-weight="600">시계방향 ♯ 증가</tspan><tspan x="115" y="122.4" font-size="3.15" font-weight="600">반시계방향 ♭ 증가</tspan></text>
+<circle cx="115" cy="115" r="2.5" fill="#ffffff" stroke="#ff5d8f" stroke-width="0.4"/>
+<text text-anchor="middle" dominant-baseline="middle" fill="#d6336c" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="115" y="133.2" font-size="2.8" font-weight="650">중앙 타공 5mm</tspan></text>
+<g>
+    <rect x="79" y="2.8" width="72" height="6.8" rx="3.4" fill="#ffffff" fill-opacity="1" stroke="#ff8fab" stroke-width="0.35"/>
+    <text text-anchor="middle" dominant-baseline="middle" fill="#d6336c" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="115" y="6.35" font-size="2.8" font-weight="800">재단선: 지름 230mm / 원판 외곽</tspan></text>
+  </g>
+</svg>

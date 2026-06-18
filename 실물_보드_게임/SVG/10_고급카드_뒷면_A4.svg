@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="210mm" height="297mm" viewBox="0 0 210 297">
+<title>5도권 고급 미션 카드 back</title>
+<desc>63 x 88mm 카드 9장 A4 배치.</desc>
+<defs>
+  <style>
+    .cut { fill: none; stroke: #ff5d8f; stroke-width: 0.35; stroke-dasharray: 2 1.5; }
+    .score { fill: none; stroke: #9aa4b2; stroke-width: 0.25; stroke-dasharray: 1 1; }
+    .guide { fill: none; stroke: #293241; stroke-width: 0.35; }
+    .tiny { font-size: 2.8px; fill: #5b6375; font-family: "Malgun Gothic", "Noto Sans KR", Arial, sans-serif; }
+  </style>
+</defs>
+<rect x="0" y="0" width="210" height="297" fill="#ffffff"/>
+<g>
+    <rect x="59.5" y="3.6" width="91" height="7.2" rx="3.6" fill="#fff8e6" fill-opacity="1" stroke="#f6c36b" stroke-width="0.35"/>
+    <text text-anchor="middle" dominant-baseline="middle" fill="#b45309" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="105" y="7.35" font-size="3.1" font-weight="800">5도권 회전판 고급 미션 카드 뒷면</tspan></text>
+  </g>
+<rect x="6.5" y="12.5" width="63" height="88" rx="6" fill="#fffdf7" stroke="#293241" stroke-width="0.32"/>
+<rect x="8.9" y="14.9" width="58.2" height="83.2" rx="4.6" fill="none" stroke="#ffffff" stroke-width="1.15"/>
+<rect x="10.7" y="16.7" width="54.6" height="79.6" rx="3.8" fill="none" stroke="#f6c36b" stroke-width="0.45"/>
+<line x1="6.5" y1="12.5" x2="69.5" y2="12.5" stroke="#ff5d8f" stroke-width="0.25" stroke-dasharray="1 1"/>
+<line x1="6.5" y1="100.5" x2="69.5" y2="100.5" stroke="#ff5d8f" stroke-width="0.25" stroke-dasharray="1 1"/>
+<line x1="6.5" y1="12.5" x2="6.5" y2="100.5" stroke="#ff5d8f" stroke-width="0.25" stroke-dasharray="1 1"/>
+<line x1="69.5" y1="12.5" x2="69.5" y2="100.5" stroke="#ff5d8f" stroke-width="0.25" stroke-dasharray="1 1"/>
+<path d="M 14.5 82.95 L 15.089 83.911 L 16.05 84.5 L 15.089 85.089 L 14.5 86.05 L 13.911 85.089 L 12.95 84.5 L 13.911 83.911 Z" fill="#f6c36b" fill-opacity="0.82"/>
+<text x="61.5" y="87.5" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" font-size="4.5" font-weight="800" fill="#f6c36b" fill-opacity="0.86" transform="rotate(-10 61.5 87.5)">♪</text>
+<rect x="15.5" y="19.8" width="45" height="9.2" rx="4.6" fill="#fff8e6" stroke="#f6c36b" stroke-width="0.3"/>
+<text text-anchor="middle" dominant-baseline="middle" fill="#b45309" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="38" y="24.5" font-size="4" font-weight="850">고급 01 정답</tspan></text>
+<rect x="13.5" y="35.5" width="49" height="33" rx="5" fill="#ffffff" fill-opacity="0.62" stroke="#ffffff" stroke-width="0.4"/>
+<text text-anchor="middle" dominant-baseline="middle" fill="#293241" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="38" y="45.8" font-size="3.7" font-weight="800">정답: D7 → G</tspan><tspan x="38" y="51.5" font-size="3.7" font-weight="550">순서: 대상 G 위에</tspan><tspan x="38" y="57.2" font-size="3.7" font-weight="550">포인터의 대상 창을 둔다.</tspan></text>
+<circle cx="38" cy="83.5" r="9" fill="#ffffff" fill-opacity="0.4" stroke="#b45309" stroke-width="0.35"/>
+<circle cx="38" cy="83.5" r="5.8" fill="none" stroke="#f6c36b" stroke-width="0.35"/>
+<text text-anchor="middle" dominant-baseline="middle" fill="#b45309" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="38" y="83.5" font-size="4.2" font-weight="850">답</tspan></text>
+<rect x="73.5" y="12.5" width="63" height="88" rx="6" fill="#fffdf7" stroke="#293241" stroke-width="0.32"/>
+<rect x="75.9" y="14.9" width="58.2" height="83.2" rx="4.6" fill="none" stroke="#ffffff" stroke-width="1.15"/>
+<rect x="77.7" y="16.7" width="54.6" height="79.6" rx="3.8" fill="none" stroke="#f6c36b" stroke-width="0.45"/>
+<line x1="73.5" y1="12.5" x2="136.5" y2="12.5" stroke="#ff5d8f" stroke-width="0.25" stroke-dasharray="1 1"/>
+<line x1="73.5" y1="100.5" x2="136.5" y2="100.5" stroke="#ff5d8f" stroke-width="0.25" stroke-dasharray="1 1"/>
+<line x1="73.5" y1="12.5" x2="73.5" y2="100.5" stroke="#ff5d8f" stroke-width="0.25" stroke-dasharray="1 1"/>
+<line x1="136.5" y1="12.5" x2="136.5" y2="100.5" stroke="#ff5d8f" stroke-width="0.25" stroke-dasharray="1 1"/>
+<path d="M 81.5 82.95 L 82.089 83.911 L 83.05 84.5 L 82.089 85.089 L 81.5 86.05 L 80.911 85.089 L 79.95 84.5 L 80.911 83.911 Z" fill="#f6c36b" fill-opacity="0.82"/>
+<text x="128.5" y="87.5" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" font-size="4.5" font-weight="800" fill="#f6c36b" fill-opacity="0.86" transform="rotate(12 128.5 87.5)">♬</text>
+<rect x="82.5" y="19.8" width="45" height="9.2" rx="4.6" fill="#fff8e6" stroke="#f6c36b" stroke-width="0.3"/>
+<text text-anchor="middle" dominant-baseline="middle" fill="#b45309" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="105" y="24.5" font-size="4" font-weight="850">고급 02 정답</tspan></text>
+<rect x="80.5" y="35.5" width="49" height="33" rx="5" fill="#ffffff" fill-opacity="0.62" stroke="#ffffff" stroke-width="0.4"/>
+<text text-anchor="middle" dominant-baseline="middle" fill="#293241" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="105" y="45.8" font-size="3.7" font-weight="800">정답: E7 → Am</tspan><tspan x="105" y="51.5" font-size="3.7" font-weight="550">순서: ii는 Am, Am의</tspan><tspan x="105" y="57.2" font-size="3.7" font-weight="550">딸림은 E.</tspan></text>
+<circle cx="105" cy="83.5" r="9" fill="#ffffff" fill-opacity="0.4" stroke="#b45309" stroke-width="0.35"/>
+<circle cx="105" cy="83.5" r="5.8" fill="none" stroke="#f6c36b" stroke-width="0.35"/>
+<text text-anchor="middle" dominant-baseline="middle" fill="#b45309" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="105" y="83.5" font-size="4.2" font-weight="850">답</tspan></text>
+<rect x="140.5" y="12.5" width="63" height="88" rx="6" fill="#fffdf7" stroke="#293241" stroke-width="0.32"/>
+<rect x="142.9" y="14.9" width="58.2" height="83.2" rx="4.6" fill="none" stroke="#ffffff" stroke-width="1.15"/>
+<rect x="144.7" y="16.7" width="54.6" height="79.6" rx="3.8" fill="none" stroke="#f6c36b" stroke-width="0.45"/>
+<line x1="140.5" y1="12.5" x2="203.5" y2="12.5" stroke="#ff5d8f" stroke-width="0.25" stroke-dasharray="1 1"/>
+<line x1="140.5" y1="100.5" x2="203.5" y2="100.5" stroke="#ff5d8f" stroke-width="0.25" stroke-dasharray="1 1"/>
+<line x1="140.5" y1="12.5" x2="140.5" y2="100.5" stroke="#ff5d8f" stroke-width="0.25" stroke-dasharray="1 1"/>
+<line x1="203.5" y1="12.5" x2="203.5" y2="100.5" stroke="#ff5d8f" stroke-width="0.25" stroke-dasharray="1 1"/>
+<path d="M 148.5 82.95 L 149.089 83.911 L 150.05 84.5 L 149.089 85.089 L 148.5 86.05 L 147.911 85.089 L 146.95 84.5 L 147.911 83.911 Z" fill="#f6c36b" fill-opacity="0.82"/>
+<text x="195.5" y="87.5" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" font-size="4.5" font-weight="800" fill="#f6c36b" fill-opacity="0.86" transform="rotate(-10 195.5 87.5)">♪</text>
+<rect x="149.5" y="19.8" width="45" height="9.2" rx="4.6" fill="#fff8e6" stroke="#f6c36b" stroke-width="0.3"/>
+<text text-anchor="middle" dominant-baseline="middle" fill="#b45309" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="172" y="24.5" font-size="4" font-weight="850">고급 03 정답</tspan></text>
+<rect x="147.5" y="35.5" width="49" height="33" rx="5" fill="#ffffff" fill-opacity="0.62" stroke="#ffffff" stroke-width="0.4"/>
+<text text-anchor="middle" dominant-baseline="middle" fill="#293241" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="172" y="42.95" font-size="3.7" font-weight="800">정답: D, Em, F♯m,</tspan><tspan x="172" y="48.65" font-size="3.7" font-weight="550">G, A, Bm, C♯dim</tspan><tspan x="172" y="54.35" font-size="3.7" font-weight="550">순서: I부터 vii°까지</tspan><tspan x="172" y="60.05" font-size="3.7" font-weight="550">읽는다.</tspan></text>
+<circle cx="172" cy="83.5" r="9" fill="#ffffff" fill-opacity="0.4" stroke="#b45309" stroke-width="0.35"/>
+<circle cx="172" cy="83.5" r="5.8" fill="none" stroke="#f6c36b" stroke-width="0.35"/>
+<text text-anchor="middle" dominant-baseline="middle" fill="#b45309" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="172" y="83.5" font-size="4.2" font-weight="850">답</tspan></text>
+<rect x="6.5" y="104.5" width="63" height="88" rx="6" fill="#fffdf7" stroke="#293241" stroke-width="0.32"/>
+<rect x="8.9" y="106.9" width="58.2" height="83.2" rx="4.6" fill="none" stroke="#ffffff" stroke-width="1.15"/>
+<rect x="10.7" y="108.7" width="54.6" height="79.6" rx="3.8" fill="none" stroke="#f6c36b" stroke-width="0.45"/>
+<line x1="6.5" y1="104.5" x2="69.5" y2="104.5" stroke="#ff5d8f" stroke-width="0.25" stroke-dasharray="1 1"/>
+<line x1="6.5" y1="192.5" x2="69.5" y2="192.5" stroke="#ff5d8f" stroke-width="0.25" stroke-dasharray="1 1"/>
+<line x1="6.5" y1="104.5" x2="6.5" y2="192.5" stroke="#ff5d8f" stroke-width="0.25" stroke-dasharray="1 1"/>
+<line x1="69.5" y1="104.5" x2="69.5" y2="192.5" stroke="#ff5d8f" stroke-width="0.25" stroke-dasharray="1 1"/>
+<path d="M 14.5 174.95 L 15.089 175.911 L 16.05 176.5 L 15.089 177.089 L 14.5 178.05 L 13.911 177.089 L 12.95 176.5 L 13.911 175.911 Z" fill="#f6c36b" fill-opacity="0.82"/>
+<text x="61.5" y="179.5" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" font-size="4.5" font-weight="800" fill="#f6c36b" fill-opacity="0.86" transform="rotate(12 61.5 179.5)">♬</text>
+<rect x="15.5" y="111.8" width="45" height="9.2" rx="4.6" fill="#fff8e6" stroke="#f6c36b" stroke-width="0.3"/>
+<text text-anchor="middle" dominant-baseline="middle" fill="#b45309" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="38" y="116.5" font-size="4" font-weight="850">고급 04 정답</tspan></text>
+<rect x="13.5" y="127.5" width="49" height="33" rx="5" fill="#ffffff" fill-opacity="0.62" stroke="#ffffff" stroke-width="0.4"/>
+<text text-anchor="middle" dominant-baseline="middle" fill="#293241" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="38" y="137.8" font-size="3.7" font-weight="800">정답: E 또는 E7</tspan><tspan x="38" y="143.5" font-size="3.7" font-weight="550">순서: 자연단음계 Em을</tspan><tspan x="38" y="149.2" font-size="3.7" font-weight="550">장화음으로 올려 쓴다.</tspan></text>
+<circle cx="38" cy="175.5" r="9" fill="#ffffff" fill-opacity="0.4" stroke="#b45309" stroke-width="0.35"/>
+<circle cx="38" cy="175.5" r="5.8" fill="none" stroke="#f6c36b" stroke-width="0.35"/>
+<text text-anchor="middle" dominant-baseline="middle" fill="#b45309" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="38" y="175.5" font-size="4.2" font-weight="850">답</tspan></text>
+<rect x="73.5" y="104.5" width="63" height="88" rx="6" fill="#fffdf7" stroke="#293241" stroke-width="0.32"/>
+<rect x="75.9" y="106.9" width="58.2" height="83.2" rx="4.6" fill="none" stroke="#ffffff" stroke-width="1.15"/>
+<rect x="77.7" y="108.7" width="54.6" height="79.6" rx="3.8" fill="none" stroke="#f6c36b" stroke-width="0.45"/>
+<line x1="73.5" y1="104.5" x2="136.5" y2="104.5" stroke="#ff5d8f" stroke-width="0.25" stroke-dasharray="1 1"/>
+<line x1="73.5" y1="192.5" x2="136.5" y2="192.5" stroke="#ff5d8f" stroke-width="0.25" stroke-dasharray="1 1"/>
+<line x1="73.5" y1="104.5" x2="73.5" y2="192.5" stroke="#ff5d8f" stroke-width="0.25" stroke-dasharray="1 1"/>
+<line x1="136.5" y1="104.5" x2="136.5" y2="192.5" stroke="#ff5d8f" stroke-width="0.25" stroke-dasharray="1 1"/>
+<path d="M 81.5 174.95 L 82.089 175.911 L 83.05 176.5 L 82.089 177.089 L 81.5 178.05 L 80.911 177.089 L 79.95 176.5 L 80.911 175.911 Z" fill="#f6c36b" fill-opacity="0.82"/>
+<text x="128.5" y="179.5" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" font-size="4.5" font-weight="800" fill="#f6c36b" fill-opacity="0.86" transform="rotate(-10 128.5 179.5)">♪</text>
+<rect x="82.5" y="111.8" width="45" height="9.2" rx="4.6" fill="#fff8e6" stroke="#f6c36b" stroke-width="0.3"/>
+<text text-anchor="middle" dominant-baseline="middle" fill="#b45309" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="105" y="116.5" font-size="4" font-weight="850">고급 05 정답</tspan></text>
+<rect x="80.5" y="127.5" width="49" height="33" rx="5" fill="#ffffff" fill-opacity="0.62" stroke="#ffffff" stroke-width="0.4"/>
+<text text-anchor="middle" dominant-baseline="middle" fill="#293241" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="105" y="137.8" font-size="3.7" font-weight="800">정답: A7 → Dm</tspan><tspan x="105" y="143.5" font-size="3.7" font-weight="550">순서: vi는 Dm, D의</tspan><tspan x="105" y="149.2" font-size="3.7" font-weight="550">딸림은 A.</tspan></text>
+<circle cx="105" cy="175.5" r="9" fill="#ffffff" fill-opacity="0.4" stroke="#b45309" stroke-width="0.35"/>
+<circle cx="105" cy="175.5" r="5.8" fill="none" stroke="#f6c36b" stroke-width="0.35"/>
+<text text-anchor="middle" dominant-baseline="middle" fill="#b45309" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="105" y="175.5" font-size="4.2" font-weight="850">답</tspan></text>
+<rect x="140.5" y="104.5" width="63" height="88" rx="6" fill="#fffdf7" stroke="#293241" stroke-width="0.32"/>
+<rect x="142.9" y="106.9" width="58.2" height="83.2" rx="4.6" fill="none" stroke="#ffffff" stroke-width="1.15"/>
+<rect x="144.7" y="108.7" width="54.6" height="79.6" rx="3.8" fill="none" stroke="#f6c36b" stroke-width="0.45"/>
+<line x1="140.5" y1="104.5" x2="203.5" y2="104.5" stroke="#ff5d8f" stroke-width="0.25" stroke-dasharray="1 1"/>
+<line x1="140.5" y1="192.5" x2="203.5" y2="192.5" stroke="#ff5d8f" stroke-width="0.25" stroke-dasharray="1 1"/>
+<line x1="140.5" y1="104.5" x2="140.5" y2="192.5" stroke="#ff5d8f" stroke-width="0.25" stroke-dasharray="1 1"/>
+<line x1="203.5" y1="104.5" x2="203.5" y2="192.5" stroke="#ff5d8f" stroke-width="0.25" stroke-dasharray="1 1"/>
+<path d="M 148.5 174.95 L 149.089 175.911 L 150.05 176.5 L 149.089 177.089 L 148.5 178.05 L 147.911 177.089 L 146.95 176.5 L 147.911 175.911 Z" fill="#f6c36b" fill-opacity="0.82"/>
+<text x="195.5" y="179.5" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" font-size="4.5" font-weight="800" fill="#f6c36b" fill-opacity="0.86" transform="rotate(12 195.5 179.5)">♬</text>
+<rect x="149.5" y="111.8" width="45" height="9.2" rx="4.6" fill="#fff8e6" stroke="#f6c36b" stroke-width="0.3"/>
+<text text-anchor="middle" dominant-baseline="middle" fill="#b45309" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="172" y="116.5" font-size="4" font-weight="850">고급 06 정답</tspan></text>
+<rect x="147.5" y="127.5" width="49" height="33" rx="5" fill="#ffffff" fill-opacity="0.62" stroke="#ffffff" stroke-width="0.4"/>
+<text text-anchor="middle" dominant-baseline="middle" fill="#293241" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="172" y="134.95" font-size="3.7" font-weight="800">정답: Fm - B♭ -</tspan><tspan x="172" y="140.65" font-size="3.7" font-weight="550">E♭</tspan><tspan x="172" y="146.35" font-size="3.7" font-weight="550">순서: ii, V, I 창을</tspan><tspan x="172" y="152.05" font-size="3.7" font-weight="550">차례로 읽는다.</tspan></text>
+<circle cx="172" cy="175.5" r="9" fill="#ffffff" fill-opacity="0.4" stroke="#b45309" stroke-width="0.35"/>
+<circle cx="172" cy="175.5" r="5.8" fill="none" stroke="#f6c36b" stroke-width="0.35"/>
+<text text-anchor="middle" dominant-baseline="middle" fill="#b45309" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="172" y="175.5" font-size="4.2" font-weight="850">답</tspan></text>
+<rect x="6.5" y="196.5" width="63" height="88" rx="6" fill="#fffdf7" stroke="#293241" stroke-width="0.32"/>
+<rect x="8.9" y="198.9" width="58.2" height="83.2" rx="4.6" fill="none" stroke="#ffffff" stroke-width="1.15"/>
+<rect x="10.7" y="200.7" width="54.6" height="79.6" rx="3.8" fill="none" stroke="#f6c36b" stroke-width="0.45"/>
+<line x1="6.5" y1="196.5" x2="69.5" y2="196.5" stroke="#ff5d8f" stroke-width="0.25" stroke-dasharray="1 1"/>
+<line x1="6.5" y1="284.5" x2="69.5" y2="284.5" stroke="#ff5d8f" stroke-width="0.25" stroke-dasharray="1 1"/>
+<line x1="6.5" y1="196.5" x2="6.5" y2="284.5" stroke="#ff5d8f" stroke-width="0.25" stroke-dasharray="1 1"/>
+<line x1="69.5" y1="196.5" x2="69.5" y2="284.5" stroke="#ff5d8f" stroke-width="0.25" stroke-dasharray="1 1"/>
+<path d="M 14.5 266.95 L 15.089 267.911 L 16.05 268.5 L 15.089 269.089 L 14.5 270.05 L 13.911 269.089 L 12.95 268.5 L 13.911 267.911 Z" fill="#f6c36b" fill-opacity="0.82"/>
+<text x="61.5" y="271.5" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" font-size="4.5" font-weight="800" fill="#f6c36b" fill-opacity="0.86" transform="rotate(-10 61.5 271.5)">♪</text>
+<rect x="15.5" y="203.8" width="45" height="9.2" rx="4.6" fill="#fff8e6" stroke="#f6c36b" stroke-width="0.3"/>
+<text text-anchor="middle" dominant-baseline="middle" fill="#b45309" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="38" y="208.5" font-size="4" font-weight="850">고급 07 정답</tspan></text>
+<rect x="13.5" y="219.5" width="49" height="33" rx="5" fill="#ffffff" fill-opacity="0.62" stroke="#ffffff" stroke-width="0.4"/>
+<text text-anchor="middle" dominant-baseline="middle" fill="#293241" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="38" y="229.8" font-size="3.7" font-weight="800">정답: G♯dim</tspan><tspan x="38" y="235.5" font-size="3.7" font-weight="550">순서: A 기준에서 vii°</tspan><tspan x="38" y="241.2" font-size="3.7" font-weight="550">창을 읽는다.</tspan></text>
+<circle cx="38" cy="267.5" r="9" fill="#ffffff" fill-opacity="0.4" stroke="#b45309" stroke-width="0.35"/>
+<circle cx="38" cy="267.5" r="5.8" fill="none" stroke="#f6c36b" stroke-width="0.35"/>
+<text text-anchor="middle" dominant-baseline="middle" fill="#b45309" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="38" y="267.5" font-size="4.2" font-weight="850">답</tspan></text>
+<rect x="73.5" y="196.5" width="63" height="88" rx="6" fill="#fffdf7" stroke="#293241" stroke-width="0.32"/>
+<rect x="75.9" y="198.9" width="58.2" height="83.2" rx="4.6" fill="none" stroke="#ffffff" stroke-width="1.15"/>
+<rect x="77.7" y="200.7" width="54.6" height="79.6" rx="3.8" fill="none" stroke="#f6c36b" stroke-width="0.45"/>
+<line x1="73.5" y1="196.5" x2="136.5" y2="196.5" stroke="#ff5d8f" stroke-width="0.25" stroke-dasharray="1 1"/>
+<line x1="73.5" y1="284.5" x2="136.5" y2="284.5" stroke="#ff5d8f" stroke-width="0.25" stroke-dasharray="1 1"/>
+<line x1="73.5" y1="196.5" x2="73.5" y2="284.5" stroke="#ff5d8f" stroke-width="0.25" stroke-dasharray="1 1"/>
+<line x1="136.5" y1="196.5" x2="136.5" y2="284.5" stroke="#ff5d8f" stroke-width="0.25" stroke-dasharray="1 1"/>
+<path d="M 81.5 266.95 L 82.089 267.911 L 83.05 268.5 L 82.089 269.089 L 81.5 270.05 L 80.911 269.089 L 79.95 268.5 L 80.911 267.911 Z" fill="#f6c36b" fill-opacity="0.82"/>
+<text x="128.5" y="271.5" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" font-size="4.5" font-weight="800" fill="#f6c36b" fill-opacity="0.86" transform="rotate(12 128.5 271.5)">♬</text>
+<rect x="82.5" y="203.8" width="45" height="9.2" rx="4.6" fill="#fff8e6" stroke="#f6c36b" stroke-width="0.3"/>
+<text text-anchor="middle" dominant-baseline="middle" fill="#b45309" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="105" y="208.5" font-size="4" font-weight="850">고급 08 정답</tspan></text>
+<rect x="80.5" y="219.5" width="49" height="33" rx="5" fill="#ffffff" fill-opacity="0.62" stroke="#ffffff" stroke-width="0.4"/>
+<text text-anchor="middle" dominant-baseline="middle" fill="#293241" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="105" y="229.8" font-size="3.7" font-weight="800">정답: B♭7 → E♭</tspan><tspan x="105" y="235.5" font-size="3.7" font-weight="550">순서: IV는 E♭, E♭의</tspan><tspan x="105" y="241.2" font-size="3.7" font-weight="550">딸림은 B♭.</tspan></text>
+<circle cx="105" cy="267.5" r="9" fill="#ffffff" fill-opacity="0.4" stroke="#b45309" stroke-width="0.35"/>
+<circle cx="105" cy="267.5" r="5.8" fill="none" stroke="#f6c36b" stroke-width="0.35"/>
+<text text-anchor="middle" dominant-baseline="middle" fill="#b45309" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="105" y="267.5" font-size="4.2" font-weight="850">답</tspan></text>
+<rect x="140.5" y="196.5" width="63" height="88" rx="6" fill="#fffdf7" stroke="#293241" stroke-width="0.32"/>
+<rect x="142.9" y="198.9" width="58.2" height="83.2" rx="4.6" fill="none" stroke="#ffffff" stroke-width="1.15"/>
+<rect x="144.7" y="200.7" width="54.6" height="79.6" rx="3.8" fill="none" stroke="#f6c36b" stroke-width="0.45"/>
+<line x1="140.5" y1="196.5" x2="203.5" y2="196.5" stroke="#ff5d8f" stroke-width="0.25" stroke-dasharray="1 1"/>
+<line x1="140.5" y1="284.5" x2="203.5" y2="284.5" stroke="#ff5d8f" stroke-width="0.25" stroke-dasharray="1 1"/>
+<line x1="140.5" y1="196.5" x2="140.5" y2="284.5" stroke="#ff5d8f" stroke-width="0.25" stroke-dasharray="1 1"/>
+<line x1="203.5" y1="196.5" x2="203.5" y2="284.5" stroke="#ff5d8f" stroke-width="0.25" stroke-dasharray="1 1"/>
+<path d="M 148.5 266.95 L 149.089 267.911 L 150.05 268.5 L 149.089 269.089 L 148.5 270.05 L 147.911 269.089 L 146.95 268.5 L 147.911 267.911 Z" fill="#f6c36b" fill-opacity="0.82"/>
+<text x="195.5" y="271.5" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" font-size="4.5" font-weight="800" fill="#f6c36b" fill-opacity="0.86" transform="rotate(-10 195.5 271.5)">♪</text>
+<rect x="149.5" y="203.8" width="45" height="9.2" rx="4.6" fill="#fff8e6" stroke="#f6c36b" stroke-width="0.3"/>
+<text text-anchor="middle" dominant-baseline="middle" fill="#b45309" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="172" y="208.5" font-size="4" font-weight="850">고급 09 정답</tspan></text>
+<rect x="147.5" y="219.5" width="49" height="33" rx="5" fill="#ffffff" fill-opacity="0.62" stroke="#ffffff" stroke-width="0.4"/>
+<text text-anchor="middle" dominant-baseline="middle" fill="#293241" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="172" y="226.95" font-size="3.7" font-weight="800">정답: C - Am - Dm</tspan><tspan x="172" y="232.65" font-size="3.7" font-weight="550">- G</tspan><tspan x="172" y="238.35" font-size="3.7" font-weight="550">순서: I, vi, ii,</tspan><tspan x="172" y="244.05" font-size="3.7" font-weight="550">V 창을 읽는다.</tspan></text>
+<circle cx="172" cy="267.5" r="9" fill="#ffffff" fill-opacity="0.4" stroke="#b45309" stroke-width="0.35"/>
+<circle cx="172" cy="267.5" r="5.8" fill="none" stroke="#f6c36b" stroke-width="0.35"/>
+<text text-anchor="middle" dominant-baseline="middle" fill="#b45309" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="172" y="267.5" font-size="4.2" font-weight="850">답</tspan></text>
+<g>
+    <rect x="26" y="286.5" width="158" height="7" rx="3.5" fill="#ffffff" fill-opacity="1" stroke="#ffd6e7" stroke-width="0.35"/>
+    <text text-anchor="middle" dominant-baseline="middle" fill="#5b6375" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="105" y="290.15" font-size="2.85" font-weight="800">카드 크기 63 x 88mm / 재단선 기준으로 자르세요 / 실제 크기 100%</tspan></text>
+  </g>
+</svg>

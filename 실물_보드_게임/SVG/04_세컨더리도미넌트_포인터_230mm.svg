@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="230mm" height="230mm" viewBox="0 0 230 230">
+<title>세컨더리 도미넌트 포인터 230mm</title>
+<desc>고급 확장용 투명 원형 포인터.</desc>
+<defs>
+  <style>
+    .cut { fill: none; stroke: #ff5d8f; stroke-width: 0.35; stroke-dasharray: 2 1.5; }
+    .score { fill: none; stroke: #9aa4b2; stroke-width: 0.25; stroke-dasharray: 1 1; }
+    .guide { fill: none; stroke: #293241; stroke-width: 0.35; }
+    .tiny { font-size: 2.8px; fill: #5b6375; font-family: "Malgun Gothic", "Noto Sans KR", Arial, sans-serif; }
+  </style>
+</defs>
+<circle cx="115" cy="115" r="115" fill="#ffffff" fill-opacity="0.04" stroke="#ff5d8f" stroke-width="0.35" stroke-dasharray="2 1.5"/>
+<circle cx="115" cy="115" r="112" fill="none" stroke="#293241" stroke-width="0.32"/>
+<circle cx="115" cy="115" r="84" fill="none" stroke="#9aa4b2" stroke-width="0.25" stroke-dasharray="1 1"/>
+<circle cx="115" cy="115" r="56" fill="none" stroke="#9aa4b2" stroke-width="0.25" stroke-dasharray="1 1"/>
+<path d="M 141.917 13.344 L 142.373 14.088 L 143.117 14.544 L 142.373 15 L 141.917 15.744 L 141.461 15 L 140.717 14.544 L 141.461 14.088 Z" fill="#ff8fab" fill-opacity="0.7"/>
+<text x="190.095" y="39.905" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" font-size="3" font-weight="800" fill="#65c3ad" fill-opacity="0.7" transform="rotate(15 190.095 39.905)">♪</text>
+<path d="M 219.706 85.044 L 220.428 86.222 L 221.606 86.944 L 220.428 87.666 L 219.706 88.844 L 218.984 87.666 L 217.806 86.944 L 218.984 86.222 Z" fill="#8ecae6" fill-opacity="0.7"/>
+<text x="215.456" y="141.917" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" font-size="3" font-weight="800" fill="#f5a742" fill-opacity="0.7" transform="rotate(35 215.456 141.917)">♬</text>
+<path d="M 190.095 188.545 L 190.684 189.506 L 191.645 190.095 L 190.684 190.684 L 190.095 191.645 L 189.506 190.684 L 188.545 190.095 L 189.506 189.506 Z" fill="#9b7ede" fill-opacity="0.7"/>
+<text x="143.056" y="219.706" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" font-size="3" font-weight="800" fill="#ff8fab" fill-opacity="0.7" transform="rotate(55 143.056 219.706)">♪</text>
+<path d="M 88.083 214.256 L 88.539 215 L 89.283 215.456 L 88.539 215.912 L 88.083 216.656 L 87.627 215.912 L 86.883 215.456 L 87.627 215 Z" fill="#65c3ad" fill-opacity="0.7"/>
+<text x="39.905" y="190.095" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" font-size="3" font-weight="800" fill="#8ecae6" fill-opacity="0.7" transform="rotate(75 39.905 190.095)">♬</text>
+<path d="M 10.294 141.156 L 11.016 142.334 L 12.194 143.056 L 11.016 143.778 L 10.294 144.956 L 9.572 143.778 L 8.394 143.056 L 9.572 142.334 Z" fill="#f5a742" fill-opacity="0.7"/>
+<text x="14.544" y="88.083" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" font-size="3" font-weight="800" fill="#9b7ede" fill-opacity="0.7" transform="rotate(95 14.544 88.083)">♪</text>
+<path d="M 39.905 38.355 L 40.494 39.316 L 41.455 39.905 L 40.494 40.494 L 39.905 41.455 L 39.316 40.494 L 38.355 39.905 L 39.316 39.316 Z" fill="#ff8fab" fill-opacity="0.7"/>
+<text x="86.944" y="10.294" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" font-size="3" font-weight="800" fill="#65c3ad" fill-opacity="0.7" transform="rotate(115 86.944 10.294)">♬</text>
+<g>
+    <rect x="95.5" y="8" width="39" height="16" rx="4" fill="#ffffff" fill-opacity="0.64" stroke="#0f766e" stroke-width="0.8"/>
+    <rect x="96.6" y="9.1" width="36.8" height="13.8" rx="3.2" fill="none" stroke="#ffffff" stroke-width="0.45"/>
+    <text text-anchor="middle" dominant-baseline="middle" fill="#0f766e" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="115" y="4.2" font-size="2.75" font-weight="800">대상 코드</tspan></text>
+    <text text-anchor="middle" dominant-baseline="middle" fill="#0f766e" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="115" y="27.7" font-size="3.2" font-weight="900">대상</tspan></text>
+  </g>
+<g>
+    <rect x="145" y="21.263" width="39" height="16" rx="4" fill="#ffffff" fill-opacity="0.64" stroke="#d6336c" stroke-width="0.8"/>
+    <rect x="146.1" y="22.363" width="36.8" height="13.8" rx="3.2" fill="none" stroke="#ffffff" stroke-width="0.45"/>
+    <text text-anchor="middle" dominant-baseline="middle" fill="#d6336c" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="164.5" y="17.463" font-size="2.75" font-weight="800">세컨더리</tspan></text>
+    <text text-anchor="middle" dominant-baseline="middle" fill="#d6336c" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="164.5" y="40.963" font-size="3.2" font-weight="900">V/대상</tspan></text>
+  </g>
+<line x1="115" y1="16" x2="164.5" y2="29.263" stroke="#d6336c" stroke-width="0.68" stroke-dasharray="2 1"/>
+<circle cx="115" cy="115" r="28.5" fill="#fff7fb" stroke="#ffc2d1" stroke-width="0.9"/>
+<text text-anchor="middle" dominant-baseline="middle" fill="#293241" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="115" y="99" font-size="6" font-weight="850">고급 포인터</tspan></text>
+<text text-anchor="middle" dominant-baseline="middle" fill="#5b6375" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="115" y="107.2" font-size="3.2" font-weight="600">두 창의 간격은 5도권 1칸 = 30도</tspan></text>
+<text x="91" y="95" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" font-size="5" font-weight="800" fill="#65c3ad" fill-opacity="0.9" transform="rotate(-8 91 95)">♪</text>
+<path d="M 140 90.9 L 140.798 92.202 L 142.1 93 L 140.798 93.798 L 140 95.1 L 139.202 93.798 L 137.9 93 L 139.202 92.202 Z" fill="#ff8fab" fill-opacity="0.9"/>
+<circle cx="115" cy="115" r="2.5" fill="#ffffff" stroke="#ff5d8f" stroke-width="0.4"/>
+<text text-anchor="middle" dominant-baseline="middle" fill="#d6336c" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="115" y="123.2" font-size="2.8" font-weight="650">중앙 타공 5mm</tspan></text>
+<g>
+    <rect x="22.5" y="216" width="185" height="8" rx="4" fill="#fff7fb" fill-opacity="1" stroke="#ffc2d1" stroke-width="0.35"/>
+    <text text-anchor="middle" dominant-baseline="middle" fill="#5b6375" font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif" ><tspan x="115" y="220.15" font-size="2.85" font-weight="800">투명 PET 원형 포인터 / 대상 창을 맞추면 오른쪽 창이 V/대상</tspan></text>
+  </g>
+</svg>
